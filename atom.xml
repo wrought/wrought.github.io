@@ -3,12 +3,573 @@
   <title><![CDATA[@wrought]]></title>
   <link href="http://existenceproof.net/atom.xml" rel="self"/>
   <link href="http://existenceproof.net"/>
-  <updated>2013-10-30T09:30:33.867Z</updated>
+  <updated>2013-10-30T11:40:19.283Z</updated>
   <id>http://existenceproof.net/</id>
   <author>
     <name><![CDATA[Matt Senate]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[Notes from Bay Area Drupal Camp (BADcamp)]]></title>
+    <link href="http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/"/>
+    <id>http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/</id>
+    <published>2013-10-30T10:59:24.000Z</published>
+    <updated>2013-10-30T11:11:08.000Z</updated>
+    <content type="html"><![CDATA[<h2>Non-Profit Summit</h2>
+<p>Came in late. Marsh Arts Center in Berkeley has terrible wifi service for an event where apparently some folks want to be connected to the internet.</p>
+<h3>Tech Soup Global</h3>
+<p>Caught the post-lunch keynote, 30 min talk. Pretty interesting hearing about the work of a progressive team inside of a large global non-profit. In sum, if you believe you can deliver, push ahead and build the world you want to work in, even if it rides against the stream.</p>
+<p>Really interesting content, slides are perfect notes for this circumstance, will link here. </p>
+<h3>CRM breakout</h3>
+<p><em>Metaphor for CRM:</em> it is like writing an outline for a novel&mdash;enough detail, but not too much.</p>
+<p>Recommend: build the tiniest possible thing and starting to use it and help it grow.</p>
+<blockquote><p>The most important thing about planning a CRM project is being <em>un-sentimental</em> about the organizational needs. Do not elevate ‘wants’ to ‘needs’ while also not demoting ‘needs’ to ‘wants’.</p>
+</blockquote>
+
+
+<p>Listen for moments of surprise and encourage those. Identify warning signs early and catch them ASAP, early, without being paranoid. </p>
+<p>Need to change from Technology Advocate to Subject-Matter Expert in your organization (recognize this).</p>
+<p>Recognize that this stuff is only interesting to technologists / nerds, not to everyone!</p>
+<p>!! Opportunity case: TI Alumni have this issue of older folks not needing some fancy things they see as young and unnecessary. On the other hand, they want to see what a new system will look like before pursuing it. Unofortunately, as the tech person has to say, if we could show you what it would look like&mdash;we would have built it already! SO, what is the use case?<br>!!! The user wants to build a <em>real</em> mock-up using an actual crm instance, <a href="http://wordpress.com/" target="_blank">wordpress.com</a>-style. This leaves the opportunity for running a simple, blog-style CRM, then upgrading for freemium features, and ultimately to move to independent instances, development contracts, etc.<br>!!! Need to investigate pantheon, aws, other drupal hosting (and cloud hosting) services to determine how to hack this with an MVP.</p>
+<h4>What about modularity&mdash;why drupal at all?</h4>
+<p>If you are using drupal as a brochureware, why would you bother integrating CRM? Probably you should not, unless you are doing <em>actual</em> interaction with your user, such as doing event registration, etc.</p>
+<h4>Technologies</h4>
+<ul>
+<li>Springboard</li>
+<li>Blackbaud? (Convio ancestor)</li>
+<li>Salesforce (force.com)</li>
+<li>Red Hen (built FDBD, for-drupal-by-drupalers, vs civicrm)</li>
+<li>CiviCRM</li>
+</ul>
+<h2>Bay Area Video Coalition (BAVC)</h2>
+<p>Jennifer Gilmen and Mark Hellar.</p>
+<p>Community center in San Francisco. Support independent media, including a public access tv station&mdash;which motivated the move to drupal in the first place some years ago.</p>
+<p>Center of Investigative Reporting \&amp; them are interested in measuring impact.</p>
+<p>Part of documentary filmmaker coop called New Day Films, want to use drupal + salesforce, etc.</p>
+<p>At the center of quite a number of different kinds of orgs. From cities to youth programs, independent producers, public meda, companies, etc.</p>
+<p>Bid on SF public access TV station some years ago. AT\&amp;T rigged the laws to choke major city contracts for public access. Funding was going down to $170,000 / year, which is nothing! Not much to support all the good work they were doing there already.</p>
+<p>Wanted to provide a lot of functionality for the public broadcast station, was possible due to work from the  Denver Open Media project. Needs more development!!! Contact them.</p>
+<p>!! Side-note… It seems like the advantage of the html5 side of the web is that folks can access the full stack of the application and can therefore reproduce issues and do bug-fixing. However, when you have server-side software, there is a limitation to reproduce the same applications in order to actually work on them in the abstract. Some systems try to address this in some fashion that allow you to more closely reproduce the sites and applications <em>as they may exist in the wild</em> but usually it is a pain in the ass! E.g. django has fixtures, drupal has site archetypes (erg, what is the technical name for this?).<br>!!! So how to fix this? Unclear, is there a standard or simple way to make your site, private, safe, yet clonable?</p>
+<p>Lots of discussion of webforms and integrating with salseforce using springboard. This is boring. Is this really the state of the art on the web for independent and public media coalitions? What is the next-generation of this type of work?</p>
+<p>Honky-dory that program folks can interoperate with this system fairly elegantly&mdash;the state of the art is perhaps (not restricted but) shaped by the use of folks who are going to be implenenting programs and working on services provided by non-profits, etc.</p>
+<ul>
+<li>Perhaps it is /using/ data, visualizing it, and allowing <em>complex interaction</em>. <ul>
+<li>What does “complex interaction” look like? <ul>
+<li>doing lots of things with the data, storing states, allowing it to interoperate with other sources and services, being able to share and then build a review/comment layer on top of this.</li>
+</ul>
+</li>
+<li>This is perhaps why I am very interested in using drupal as a back-end to some javascript engines like knockout.js.</li>
+</ul>
+</li>
+</ul>
+<p>BAVC has a program for documentary filmmakers to publish and share content, which automatically gets archived in the internet archive&mdash;stored in “Community Media” archive.</p>
+<p>Ideally, folks should be able to upload content to their local library, ship it to BAVC, publish to the website, and archive it with Internet Archive&mdash;<em>automagically</em>.</p>
+<p>Created a website for city and county of San Francisco, <a href="http://goconnectsf.org/" target="_blank">GoConnectSF</a> with youth center digital filmmaking programs.</p>
+<p>If you want to see code email markh@bavc.org, for programs, email jennifer@bavc.org.</p>
+<h2>Drupal 8 Security</h2>
+<p>Presentation formatted in Ubuntu font ;)</p>
+<p>Drupal.org acts as a security gateway to drupal modules, but as modules move to github/etc, we&#39;ll see the security landscape.</p>
+<p>Examples of systems having their repositories compromised in the last couple of years:</p>
+<h3>Versioning</h3>
+<ul>
+<li>FreeBSD compromised with third-party packages in conversion between cvs to subversion.<ul>
+<li>Took a while to find out what had been changed due to central cvs control mechanism</li>
+</ul>
+</li>
+<li>Linux Kernel: This happened a few years ago to Linux as well<ul>
+<li>Luckily, with git it was relatively easier to determine if something had been tampered with</li>
+</ul>
+</li>
+</ul>
+<h3>API</h3>
+<p>Drupal - Uses PHP, Procedural hook system &gt; modularity: PSR/Symfony (paradigm)</p>
+<ul>
+<li>Emphasis for Drupal is to put more emphasis on the Services module, need to keep eye on REST security moving forward.</li>
+<li>Comparative examples outline differences</li>
+</ul>
+<h3>Django vs. Drupal</h3>
+<p>“The fact that Django is so object-oriented inherently reduces th epotential for vulnerabilities (even by mistake) that are often seen in other procedural code because data will typically travel through a single common layer (or class) whereby data can be cleaned, security checks conducted, etc.”</p>
+<p>Movement to Object Oriented model in Drupal 8, as part of a move to professionalize PHP.</p>
+<p>Speaker: “Often compared to a field of Anarchy, where things act their own way.”</p>
+<ul>
+<li>php == “anarchy”</li>
+</ul>
+<p>Lookup: “PHP: The Right Way”, www.php-fig.org</p>
+<p>Dries Buytaert article on PHP over Java for Drupal</p>
+<ul>
+<li>More approachable for amateur programmers.</li>
+<li>Also, audience of Drupal did not include conservative bodies like Governments<ul>
+<li>However, since, these adopters have come.</li>
+</ul>
+</li>
+<li>Opportunity to standardize and professionalize the application, without becoming rigid.</li>
+</ul>
+<h3>API Security</h3>
+<p>All have methods for filtering dangerous content.</p>
+<ul>
+<li>Drupal<ul>
+<li>Filters on output rather than input! Same as WordPress, unlike others</li>
+<li>Input filters (t(), check_plain, filter_xss, db_query); entities; form tokens; autho cookies; password hashing &amp; salting (SHA512), Twig</li>
+<li>Twig is a new Drupal 8 templating framework&mdash;a dangerous attack vector.<ul>
+<li>US Government found that majority of security vulnerabilities live in templates!</li>
+</ul>
+</li>
+<li>Some good database abstraction which sort of serves as an ORM.</li>
+</ul>
+</li>
+<li>WordPress<ul>
+<li>Filters (wp_filter_kses(), $wpdb)</li>
+</ul>
+</li>
+</ul>
+<h3>Security Management</h3>
+<p>Drupal has the most active security infrastructure, especially comparative to WordPress.</p>
+<ul>
+<li>Security Team exists to:<ul>
+<li>Resolve issues</li>
+<li>Assist module maintainers</li>
+<li>Documentation</li>
+<li>Responsible disclosure</li>
+<li>Secure coding guide</li>
+<li>Provide full project review for drupal.org modules. (this security vector).<ul>
+<li>Seems like it&#39;s possible to resolve this “github” issue by piping endpoints.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WordPress<ul>
+<li>Does have a security team, but they take a background role</li>
+<li>Many folks seeking to do security for work</li>
+<li>Don&#39;t set up monitoring, but they stop the hackers pre-emptively.</li>
+</ul>
+</li>
+</ul>
+<p>!Idea: Java vs. PHP: Security Implications of Language Choice for Web Applications - James Walden (Northern Kentucky University). </p>
+<ul>
+<li><a href="http://freshmeat.net" target="_blank">freshmeat.net</a></li>
+</ul>
+<p>A lot of focus over the years on WordPress plugins</p>
+<ul>
+<li>20% of top plugins, including majority of ecommerce plugins had serious vulnerabilities<ul>
+<li>Researchers found that open source community did not take responsibility for security of community developments.</li>
+</ul>
+</li>
+</ul>
+<h3>Community Comparison</h3>
+<p>Essentially, there are trade-offs between platforms from a security perspective, e.g. “ease of use” versus centralized management.</p>
+<h3>Security Issue: Drupal Core</h3>
+<p>Some Recent Vulnerabilities</p>
+<p>Drupal:</p>
+<ul>
+<li>Image module<ul>
+<li>Not checking whether a valid token was used to create an image derivative (could create on the fly, execute a DoS attack)</li>
+</ul>
+</li>
+<li>Context module<ul>
+<li>Not a sufficient check whether you had access&mdash;could gain access.</li>
+</ul>
+</li>
+</ul>
+<p>WordPress</p>
+<ul>
+<li>eCommerce plugin<ul>
+<li>Many issues with XSS</li>
+<li>insufficient level of content filtering with wp_kses_post()</li>
+<li>In another point, had not checked for proper permissions to allow only ordering of published items.</li>
+</ul>
+</li>
+</ul>
+<h3>Compliance</h3>
+<p>FISMA, standards for government bodies</p>
+<p>PCI, credit card standards</p>
+<p>Lots of toggles to form compliance:</p>
+<h3>Roles &amp; Permissions</h3>
+<p>Drupal:</p>
+<ul>
+<li>Very granular, but very complex that can generate vulnerabilities</li>
+<li>However, this is possible to manage better with OA and WorkBench modules.</li>
+</ul>
+<p>WordPress has more separation of administrative layer.</p>
+<h3>Federated Identity &amp; Multi-Factor Authentication</h3>
+<p>Drupal</p>
+<ul>
+<li>OpenID, OAuth, LDAP, Google Authenticator, TFA/SmS, YubiKey, Duo, wikid, SAML: NIH Login, CAS,: OMB MAX, PIV</li>
+<li>Features expanding for authentication</li>
+<li>SAML and CAS are secure authentication protocols for many government agencies.</li>
+</ul>
+<h3>Vulnerability Assessment</h3>
+<p>Drupal</p>
+<ul>
+<li>security review, coder/secure code review, dpscan, security scanner</li>
+</ul>
+<h3>Hardening</h3>
+<p>Drupal</p>
+<ul>
+<li>Hardened Drupal, Guardr, Paranoia<ul>
+<li>Guardr install profile activiates many helpful</li>
+<li>Acquia maintains a great overview of security modules with Drupal Scout</li>
+</ul>
+</li>
+</ul>
+<p>WordPress</p>
+<ul>
+<li>Integrated security plugins (Better WPSecurity, BulletProof Security), Secure WordPress.A</li>
+</ul>
+<h3>Continuous Monitoring</h3>
+<ul>
+<li>By default, you often get a wealth of data which is difficult to filter</li>
+<li>Collecting lots of data, but watching the important stuff allows capability of reducing threats and addressing attacks.<br>w </li>
+<li>A lot of security modules are at a nascent stage.</li>
+</ul>
+<h3>Hosting Platforms and Environment</h3>
+<p>Drupal</p>
+<ul>
+<li>LAMP: Apache/Nginx/IIs, Mysql/Maria/PostgreSQL/MSSQL/Oracle, PHP 5.3</li>
+<li>Follow fork to MariaDB<ul>
+<li>Oracle was becoming less transparent in terms of security</li>
+</ul>
+</li>
+</ul>
+<h3>Drupal.org Security Incident</h3>
+<ul>
+<li>Breach of drupal.org, compromised</li>
+<li>Had to reset passwords</li>
+<li>Third-party software breached: undisclosed</li>
+<li>With drupal, you never walk alone.<ul>
+<li>Depending on Apache, Cash, Chef, Solar, Maria, Linux, etc.</li>
+</ul>
+</li>
+</ul>
+<h3>Security Ninja</h3>
+<ul>
+<li>Only possibly by effectively understanding the other components to become a <em>Security Rockstar</em>!</li>
+</ul>
+<h2>Why users are irrational and what we can do about it</h2>
+<h3>Heuristics</h3>
+<p>&quot;Ferrari drivers are erratic, look out!&quot;</p>
+<p>Help us make decisions really quickly — “rules of thumb” </p>
+<h3>Cognitive Biases</h3>
+<p>When we have a heuristic that is in some fashion illogical or erroneous</p>
+<h4>Example</h4>
+<p>Different ways of displaying the expanded form of 9! yields different incorrect results</p>
+<ul>
+<li>Starting with 1 gives ~500</li>
+<li>Starting with 9 gives ~4200</li>
+<li>Total is ~ 36,000?</li>
+</ul>
+<p>Humans have a bias toward initial data for instance.</p>
+<h4>Inspirational White Dudes</h4>
+<ul>
+<li>Khaneman</li>
+<li>Tversky</li>
+<li>Thaler</li>
+<li>Slovic</li>
+<li>Arielly<ul>
+<li>More down-to-earth, also good TED talks on irrationality</li>
+</ul>
+</li>
+</ul>
+<p>Do we trust these folks? They are pioneers in psychology, which is convenient since there are supposedly controlled empirical experiments</p>
+<ul>
+<li>Pioneers of usability research /before/ it existed.</li>
+</ul>
+<p>Many Biases</p>
+<h4>Common Types</h4>
+<ul>
+<li>Confirmation bias<ul>
+<li>Will gravitate to data that confirms existing beliefs</li>
+<li>Ex: searching for “the right solution” online can simply yield the same /incorrect/ solution<ul>
+<li>Designers also say, 51% are better (but is there really significance?) often in usability testing</li>
+<li>Careful of body language to encourage confirmation (leaning in with a tester)</li>
+</ul>
+</li>
+<li>Approaches<ul>
+<li>Provide answers, not raw data; provide anecdotes, not statistics; observe users not metrics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Congruence bias<ul>
+<li>People rely on direct hypothesis testing rather than indirect testing.</li>
+<li>Drupal is a perfect example of this bias. There are many ways to do things, surprising sometimes.</li>
+<li>Surveyed all the customers, so therefore this is what we should do (but what about the other users?)</li>
+<li>Designers don&#39;t look outside of the sphere of work (pick between 3 options—but what about outside the scope?)</li>
+<li>Approaches<ul>
+<li>Keep eyes out for strange pathways, unnecessary solutions</li>
+<li>Encourage stakeholders to broaden the base, compare against competitors and similar products, look cross-industry</li>
+<li>Designers should test against competition, not within merely available options</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Curse of Knowledge<ul>
+<li>!RAMPANT in the Drupal community</li>
+<li>Assume huge amounts of knowledge for the users for language and nomenclature<ul>
+<li>Not everyone knows what a <em>node</em> is!</li>
+</ul>
+</li>
+<li>Assumption that search box is always in upper right corner</li>
+<li>Language like “boolean, float, integer” for fields UI&mdash;really inaccessible vocabulary</li>
+<li>Designers may adopt “new icons” or new images, but is it necessarily understandable to your user?<ul>
+<li>Be careful venturing out into new territory, at least use some other affordance to encourage users to break pattern</li>
+</ul>
+</li>
+<li>Approaches<ul>
+<li>Users should use ubiquitous patterns wherever possible</li>
+<li>Use video to capture contextual inquiry to put usage in perspective</li>
+<li>Test patterns you already consider “established”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Illusion of Correlation<ul>
+<li>Misinterpreting coincidental events for causal relationships.</li>
+<li>Users explain that one action necessarily generates another response, but may not be the case.</li>
+<li>Seeing sales or traffic go down after launch of new site&mdash;maybe there are other factors</li>
+<li>Changing the design and finding that it tests more poorly.</li>
+<li>Approaches<ul>
+<li>Ensure feedback is limited to the user&#39;s task to allow them to construct causal relations where appropriate, and not the opposite</li>
+<li>Focus the question. Sales went down, but what else happened, what was going on?</li>
+<li>Designers should limit the variables to ensure less convolution.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Loss Aversion<ul>
+<li>Folks strongly prefer avoiding losses over acquiring gains</li>
+<li>Another, sub-bias is: memory of pleasant events fades quickly, versus unpleasant fading slowly.</li>
+<li>Users may feel connected to things they have made, don&#39;t want to lose them</li>
+<li>Stakeholders don‘t want to feel like they’ve wasted investment by throwing code away.<ul>
+<li>aka “Sunk Cost Fallacy” - spent all this time working on it, so the newness “loses” all that previous investment.</li>
+<li>The issue with this is not asessing the development in the context of time, that overall there are opportunities to build new things that will take less times.</li>
+<li>!&quot;Your only have the future, the past doesn&#39;t exist!&quot;</li>
+</ul>
+</li>
+<li>Designers get stuck to carefully-crafted elements (e.g. skeumorphic button) that add unnecessary dependency<ul>
+<li>Emotional attachment, rather than ephemeral things</li>
+</ul>
+</li>
+<li>Approaches<ul>
+<li>Can use loss aversion in ethical and transparent ways to drive stickiness</li>
+<li>Encourage stakeholders to assess future costs, rather than only past cost</li>
+<li>Designers need a Zen approach to have emotional detachment&mdash;move on, create something new.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_Cognitive_Biases" target="_blank">List of Cognitive Biases</a><ul>
+<li>Many more!</li>
+</ul>
+</li>
+</ul>
+<p>!Anchors can encourage the user to make a choice that seems reasonable in context, rather than actual cost and value (e.g. three options, middle highlighted). </p>
+<h4>Ethical Considerations</h4>
+<ul>
+<li>may not be illegal or necessarily wrong, but it could be unethical.</li>
+<li>Check out the [](Dark Patterns Library):<ul>
+<li>Already opted-in to receiving spam emails after signing up for something.</li>
+<li>This has been used for good&mdash;organ donors in Europe, opt-out system.</li>
+<li>Way more organs available in Europe</li>
+</ul>
+</li>
+</ul>
+<p>! Metric: Consider whether your use of biases, patterns, etc in a way that is aligned with the needs of your user.</p>
+<h3>Design Patterns</h3>
+<p>Acquia is assembling a design patterns document. One of them:</p>
+<ul>
+<li>I&#39;m worthy of your trust<ul>
+<li>I say what I mean and I do what I say. It&#39;s not in my nature to trick, conceal, handwave, or manipulate. My success is directly aligned with yours and your good opinion is invaluable</li>
+</ul>
+</li>
+</ul>
+<h3>Questions</h3>
+<p>Sunk-Cost Fallacy Strategies</p>
+<ul>
+<li>Do an actual calculation of support cost</li>
+<li>However, another cognitive bias to frustrate this<ul>
+<li>Folks have a tendency to value near-term costs over long-term costs. </li>
+</ul>
+</li>
+</ul>
+<h2>Data Management Applications with Drupal as your Framework</h2>
+<p>!Tripal - Genomics in Drupal</p>
+<ul>
+<li>Generic Model Organism Database - DB schema</li>
+</ul>
+<p>Kept building data apps, so eventually decided to make it more modular, reusable.</p>
+<p>Saw drupal, has nice features:</p>
+<ul>
+<li>User, roles, auth</li>
+<li>Forms, data handling, etc</li>
+</ul>
+<h3>Data development</h3>
+<p>Chose to write data application without CCK, so this is all in code.</p>
+<ul>
+<li>Existing built-in schema update and <code>drush make</code></li>
+<li>Data source/uplink:<ul>
+<li>Links to outside data sources with financial info and academic data</li>
+</ul>
+</li>
+<li>Upload/import w/ cron and batch</li>
+<li>Create read-only data mirrors</li>
+</ul>
+<p>Chose drupal to make highly modular design</p>
+<p>Use case requires granular access control for each module</p>
+<p>Can have as many or few roles as you need, granular permissions</p>
+<p>In terms of content access, can use built-in realms and grants</p>
+<p>Uses Content and Forms features to develop platform</p>
+<p>Advantage of Drupal is “aspect-oriented” paradigm rather than MVC</p>
+<ul>
+<li>Flexibility is integral, things change on a regular term</li>
+<li>The module handles everything concerning the particular aspect<ul>
+<li>The alumni module handles the fields, the submission, form handling, etc.</li>
+</ul>
+</li>
+<li>Usage of hooks (actions) as callbacks through the standard process</li>
+</ul>
+<h2>Demo Framework</h2>
+<p>Keeping it simple, this is fairly simple (though lengthy) install:</p>
+<p><a href="https://drupal.org/project/df" target="_blank">Demo Framework</a></p>
+<p>This is a way to showcase a site to potential customers quickly, not just describe drupal features.</p>
+<p>Acquia is behind it, but committed to community involvement and open source—it already is open source.</p>
+<p>To work with a client, ended up developing a new use case for a proper, thinner framework based on DF for sites:</p>
+<p><a href="https://drupal.org/project/lightning" target="_blank">Lightning</a></p>
+<p>!Basically, as far as I can tell, this project is a low-level closely drupal-integrated solution for making a data application</p>
+<h2>Project Prophylaxis</h2>
+<p>A <em>prophylactic</em> is a mechanism to prevent the transmission of disease.</p>
+<p><em>Practicing Project Prophylaxis</em> is the practice of using legally protectie measures when working with clients by contract.</p>
+<h3>Exposed</h3>
+<p>You can feel exposed as a developer, designer, engineer, or even member of a new business.</p>
+<p>Crowd is mostly shop owners / directors. A few contractors. One “other”.</p>
+<h3>Client Relationship</h3>
+<p>Consider the relationship through the entire lifecycle of the process.</p>
+<blockquote>
+<p><em>Choose clients wisely</em></p>
+</blockquote>
+<p>Tips:</p>
+<ul>
+<li>Know your skills / comfort zone</li>
+<li>Align personalities / mission</li>
+<li>Understand what success looks like<br>** Have metrics for success?</li>
+</ul>
+<p>Often, go through discovery phase, work on spec (for pay), allow room for alternative vendors.</p>
+<blockquote>
+<p><em>Interestingly, this is never the case.</em></p>
+</blockquote>
+<p>If you‘re crafting a contract, you’ll be agreeing to deliverables. Discovery phase gives a chance to get a feel for client and scope.</p>
+<blockquote>
+<p>All those present are agile, so this is a consistent process</p>
+</blockquote>
+<p><strong>Q:</strong> How detailed is that spec?</p>
+<p><strong>A:</strong> Depends. Outline as:</p>
+<ul>
+<li>UX Artefacts</li>
+<li>WireFrames</li>
+<li>Assets</li>
+<li>Tech Strategy</li>
+<li>Information / content</li>
+</ul>
+<p>Use a boiler plate contract that effectively agrees that the client will pay. The deliverables are specified out in particular. Some use a time &amp; materials contract—hourly work, in good faith in estimates, but the client can derail at any time with crazy requests. If you&#39;re not really strict about that you can run through their budget with half a project. This is important for your record. You may be legally protected, but you have a business obligation to right somehow.</p>
+<p>The message here:</p>
+<blockquote>
+<p><em>There&#39;s a lot of gray area</em></p>
+</blockquote>
+<p>Every client is different, need to foster the relationship while also using the same protections across.</p>
+<h3>Negotiation and contracts</h3>
+<p>Scopes of Work can be 20 pages long! These aren‘t necessary, detestable. As long as you have an understanding going forward, not everything has to be in the Scope of Work, you’ll have good legal protection.</p>
+<p>A good lawyer is going to write a boilerplate contract in your best favor. When you go in to signing someone else&#39;s contract, be aware that they want to have an edge, have terms that are in their favor.</p>
+<ul>
+<li>Negotiation tips:<ul>
+<li>Confidence<ul>
+<li>Most clients feel like they&#39;re being wrong or mean, have to be comfortable being matter-of-fact. Ask for stuff, and say “No”.</li>
+</ul>
+</li>
+<li>Strawmen<ul>
+<li>Talk to someone else to get feedback in the middle of a negotiation</li>
+</ul>
+</li>
+<li>Advocates<ul>
+<li>Most important factor&mdash;need to connect with your advocate to make it through e.g. “procurement”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Battle of the Forms:<ul>
+<li>Proposals, SOWs, MSAs, POs, yadda yadda…</li>
+<li>Be careful because MSA language may supercede SOW terms about when/how to get paid.</li>
+<li>Do search for “indemn” strike out indemnification against you.</li>
+<li>Also warranties and representations</li>
+<li>Don&#39;t assign rights of your toolkit to the client! (Careful of the “open source” clauses)</li>
+</ul>
+</li>
+<li>Contract Basics<ul>
+<li>Money (Approvals and satisfaction), liability (reps/warranties and indemnity), and Rights (don&#39;t “assign” your toolkit</li>
+</ul>
+</li>
+<li>Money<ul>
+<li>“Posession is 9/10ths of th elaw.”</li>
+</ul>
+</li>
+</ul>
+<p>Majority of Gabe&#39;s clients are using fixed-pay. Number one concern is scope creep versus milestone and deliverable. Some of his biggest clients use fairly generic language.</p>
+<p>Be careful of acceptance statements and satisfaction language.</p>
+<blockquote>
+<p>“Full discretion” besides “reasonable discretion”?</p>
+</blockquote>
+<p>Difference between a SOW and Terms&mdash;the simplicity of individual words like “sole”</p>
+<h3>Getting it Done</h3>
+<ul>
+<li>Discover and set expectations: communication, risks, requirements</li>
+<li>Meet expectations: Build it well, product reviews</li>
+<li>Manage expectations: status, scope control</li>
+<li>Invoice early and often</li>
+<li>Be consistent, proactive, and reinforce value</li>
+<li>Write it down.</li>
+</ul>
+<p>Metaphor: the same way you pay attention to your servers you should pay attention to your contracts&mdash;you can get hacked.</p>
+<p>Agreeing to it in writing&mdash;<em>you&#39;ve got a contract!</em></p>
+<p>!Arbitration can be <em>gamed</em></p>
+<blockquote>
+<p>Example: one of Gabe&#39;s clients had a client that extended the cost quite a bit, making it expensive.</p>
+</blockquote>
+<p><strong>BIG LEVER:</strong> Put an attorney&#39;s fees clause in the contract, so you can argue for $30k-$40k contracts.</p>
+<h3>Clients Gone Wild</h3>
+<ul>
+<li>Challenge: protecting clients from themselves—stakes are high!</li>
+<li>Contracts in Agile work, when to use change order? SOW?</li>
+<li>Manage expectations while protecting yourself in T&amp;M: keep focused on MVP and remember your backlog<ul>
+<li>Can use the backlog as a good metaphor and communications tool with clients. Use this feedback speedily!</li>
+</ul>
+</li>
+<li>Stay strong</li>
+<li>Non-payments, silent treatment, rude behavior</li>
+</ul>
+<h3>Firing Clients</h3>
+<p>Trying to be <strong>partners</strong> with all of your clients, on the <em>survivor island</em>.</p>
+<p>When there is <strong>animosity</strong> get away as fast as you can.</p>
+<p>!Know what <strong>indemnity</strong> means! Pay your lawyer some money now to save you tons later!</p>
+<h3>Conclusion</h3>
+<ul>
+<li>Choose your clients with discretion</li>
+<li>Always wear a contract</li>
+<li>Make sure it fits</li>
+<li>Foster the relationship</li>
+<li>Be the stable one</li>
+<li>Communicate</li>
+</ul>
+<p>If you have to… <strong><em>Walk Away</em></strong></p>
+]]></content>
+    <category scheme="http://existenceproof.net/tags/BADcamp/" term="BADcamp"/>
+    <category scheme="http://existenceproof.net/tags/drupal/" term="drupal"/>
+    <category scheme="http://existenceproof.net/tags/cms/" term="cms"/>
+    <category scheme="http://existenceproof.net/tags/php/" term="php"/>
+    <category scheme="http://existenceproof.net/tags/software/" term="software"/>
+    <category scheme="http://existenceproof.net/tags/unconference/" term="unconference"/>
+    <category scheme="http://existenceproof.net/tags/open source/" term="open source"/>
+    <category scheme="http://existenceproof.net/tags/community/" term="community"/>
+    <category scheme="http://existenceproof.net/tags/share/" term="share"/>
+    <category scheme="http://existenceproof.net/tags/talks/" term="talks"/>
+  </entry>
   <entry>
     <title type="html"><![CDATA[A new blog]]></title>
     <link href="http://existenceproof.net/a-new-blog/"/>
