@@ -701,10 +701,11 @@ article footer .addthis iframe {
 #sidebar .intro {
   padding-top: 10px;
 }
-#sidebar #brain-scan {
+#sidebar #scanimation {
   padding-top: 10px;
   margin: auto;
   width: 213px;
+  height: 231px;
 }
 #footer {
   color: #999;
