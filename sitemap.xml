@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://existenceproof.net/projects/index.html</loc>
+    <lastmod>2014-07-21T09:33:06.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://existenceproof.net/one_rule_to_guide_them_all/</loc>
     <lastmod>2014-07-21T08:55:26.000Z</lastmod>
   </url>
@@ -15,10 +19,6 @@
   <url>
     <loc>http://existenceproof.net/zero-to-hackerspace-in-eight-steps/</loc>
     <lastmod>2014-06-09T23:46:50.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://existenceproof.net/projects/index.html</loc>
-    <lastmod>2014-06-09T04:53:04.000Z</lastmod>
   </url>
   <url>
     <loc>http://existenceproof.net/abc-no-rio/</loc>
@@ -45,15 +45,7 @@
     <lastmod>2013-10-30T07:52:08.000Z</lastmod>
   </url>
   <url>
-    <loc>http://existenceproof.net/london-cambridge-oxford.html/</loc>
-    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</loc>
-    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://existenceproof.net/on-my-way-to-geneva.html/</loc>
+    <loc>http://existenceproof.net/launching-a-new-blog-on-pelican.html/</loc>
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>
@@ -61,11 +53,19 @@
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>
+    <loc>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</loc>
+    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://existenceproof.net/london-cambridge-oxford.html/</loc>
+    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://existenceproof.net/arrival.html/</loc>
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>
-    <loc>http://existenceproof.net/launching-a-new-blog-on-pelican.html/</loc>
+    <loc>http://existenceproof.net/on-my-way-to-geneva.html/</loc>
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>
