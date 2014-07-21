@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://existenceproof.net/one_rule_to_guide_them_all/</loc>
+    <lastmod>2014-07-21T08:55:26.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/</loc>
-    <lastmod>2014-06-11T03:36:05.000Z</lastmod>
+    <lastmod>2014-06-11T23:44:43.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/</loc>
+    <lastmod>2014-06-11T23:42:06.000Z</lastmod>
   </url>
   <url>
     <loc>http://existenceproof.net/zero-to-hackerspace-in-eight-steps/</loc>
@@ -37,19 +45,19 @@
     <lastmod>2013-10-30T07:52:08.000Z</lastmod>
   </url>
   <url>
-    <loc>http://existenceproof.net/on-my-way-to-geneva.html/</loc>
-    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://existenceproof.net/post-conference.html/</loc>
-    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
-  </url>
-  <url>
     <loc>http://existenceproof.net/london-cambridge-oxford.html/</loc>
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>
     <loc>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</loc>
+    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://existenceproof.net/on-my-way-to-geneva.html/</loc>
+    <lastmod>2013-10-30T07:39:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://existenceproof.net/post-conference.html/</loc>
     <lastmod>2013-10-30T07:39:17.000Z</lastmod>
   </url>
   <url>

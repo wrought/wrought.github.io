@@ -3,25 +3,101 @@
   <title><![CDATA[@wrought]]></title>
   <link href="http://existenceproof.net/atom.xml" rel="self"/>
   <link href="http://existenceproof.net"/>
-  <updated>2014-06-11T03:58:14.305Z</updated>
+  <updated>2014-07-21T08:56:11.759Z</updated>
   <id>http://existenceproof.net/</id>
   <author>
     <name><![CDATA[Matt Senate]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[One Rule to Guide Them All]]></title>
+    <link href="http://existenceproof.net/one_rule_to_guide_them_all/"/>
+    <id>http://existenceproof.net/one_rule_to_guide_them_all/</id>
+    <published>2014-07-20T08:52:25.000Z</published>
+    <updated>2014-07-21T08:55:26.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>“Food must be shared.” &mdash; <a href="https://kesselberg.info" target="_blank">Kesselberg</a> (Community)</p>
+<p>“Be excellent to each other.” &mdash; <a href="https://noisebridge.net" target="_blank">Noisebridge</a> (Hackerspace)</p>
+<p>“Don&#39;t be evil.” &mdash; <a href="https://en.wikipedia.org/wiki/Google" target="_blank">Google</a> (Company)</p>
+</blockquote>
+<p>How do we socially organize? How do we share our most basic principles, morals, values? What does it mean when we simplify, when we search for or even implement essentialized notions as the baseline for a community&#39;s standards?</p>
+<p>Three examples have come to mind of late and instigate these questions for me. I do not have the answers, but it creates an alluring pursuit.</p>
+<h2>Kesselberg (Berlin)</h2>
+<p>First, Kesselberg is an unrestricted, autonomous, intentional community outside of Berlin, Germany. The community has quite a strong core who have been living in their discrete location for some time. On the other hand, the place is truly open to anyone who wants to come there, and thus some people come who are less intentional about their stay with respect to the others, but are allowed nonetheless. A dynamic exists between these groups, and I cannot say where it stands at the moment, though I am attempting to investige further. Ultimately, there is only one rule. If you have food, you need to share it. This is a clever concept, focusing on commoning a basic human need and resource, as well as identifying a mode for social exchange around the hearth, bowl, hand, fire, etc. Its implications prove interesting at the very least.</p>
+<h2>Noisebridge (San Francisco)</h2>
+<p>Another community, Noisebridge, in the mission district of San Francisco, also has just one rule. Quoting Keanu Reeves in <strong>Bill and Ted&#39;s Excellent Adventure</strong>. Reeves plays a Southern Californian teenager who travels in time in order to learn history, finish his final project for his history class,  and graduate from high school. If he fails, in the future, he won&#39;t later co-create a peaceful society guided by the music and philosophy of his excellent rock-and-roll band. </p>
+<p>Travelling to this future society, Reeve&#39;s character learns from their leaders that his future self has taught the planet about world peace. He is prompted to share some wisdom. He takes a moment, gets all poetic on us, and states, “Be excellent to each other.” Nothing more appropriate for culture-jamming hackers to adopt as their basic and altruistic motto for moral guidance.</p>
+<p>However, “Be excellent to each other” is not perfect. In the Noisebridge community, there has been much ambiguity around this notion and phrasing. Further, to emphasize being excellent has suggested to some that therefore some attitude, behaviors, and practices are <strong>“un-excellent”</strong> and should therefore be identified, prevented, or otherwise opposed in the spirit of being “excellent” instead. On the other hand, the hacker community has memetically spread this rule around the world where it has a place and application in many other communities. It is certainly imperfect, but it has legs, which is worth a ponder…</p>
+<h2>Google</h2>
+<p>Finally, there is one dangerously simplistic phrase, for which there is certainly ample debate already. Google‘s “Don’t be evil” has the opposite <em>problem</em> as being “excellent” has for Noisebridge. Why state this principle in the negative? Why should being “evil” be avoided? We shouldn&#39;t we “be good” or some similar positive equivalent? In some way, we see the practice of this essential concept at work as Google grows in its wealth and power. Will Google become evil? Is Google evil in some ways already? What is evil? What are the good things that Google does? Can they be compared to the evil, or is evil absolute and represent a fundamental failure?</p>
+<h2>In sum…</h2>
+<p>To me, I am most impressed by Kesselberg‘s statement because (unlike the other two above), it has a clear but unviable opposite. To not share one’s food is unambiguous. In some way keeping, food to one‘s self (in most cases) would lean toward self-interest and away from commons-building. If the priority of the community is to share one’s food if one has food, then greater than self-evidence, this community has a reasonable request for which the opposite can be easily understood, as it is fairly undebatable (at least in construction). I think this may be an indicator of what can make a very valuable basis of a moral system.</p>
+<p>Additionally, Kesselberg‘s food sharing notion converges on one of a person’s most basic needs, functions, and elements of day-to-day life. The sharing of food creates the possibility and potential for further interaction and engagement. It is such sharing that brings people together, where other aspects of culture may emerge and flourish. Time to listen, to understand, to express, be creative, to relax, and to grow, bonding with others.</p>
+<h2>In Math…</h2>
+<p>In the practice of mathematics, an informal (non-binding) principle is the concept of <strong>elegance</strong>. Simply put, elegance emphasizes (even prioritizes) simplicity. If something can be said as one shorter statement, rather than two, then do it! It&#39;s of course not universal, and there are lots of counter examples, as you might imagine. Further, elegance may very well be anthropocentric; do the context and constraints of being a human predispose or bias us away from complexity in our models? I believe this certainly can be the case, and therefore we should be aware of such bias.</p>
+<p>From a logical stand-point, non-trivial but minimal systems that demonstrate elegance can be illustrative, powerful (theoretically), and even practical. For instance, consider in propositional logic, the functionally complete formal system constructed from a single operator: <a href="https://en.wikipedia.org/wiki/Logical_NAND" target="_blank">Nand or “not and”</a>. This system allows the construction of all the commonly sensical equivalents of logic (‘and’, ‘or’, ‘implies’, ‘not’, etc) in a more abstract way (complex in length, simple in basis). On top of it all, <a href="https://en.wikipedia.org/wiki/NAND_logic" target="_blank">logical Nand</a> is the operation implemented in the Nand gate, the tool by which computational machines may function!</p>
+<p>These simple rules or statements used by the communities listed above make me think about such mathematical elegance, in a heuristical and poetic sense.</p>
+<p>&lt;/end&gt;</p>
+]]></content>
+    <category scheme="http://existenceproof.net/tags/rules/" term="rules"/>
+    <category scheme="http://existenceproof.net/tags/principles/" term="principles"/>
+    <category scheme="http://existenceproof.net/tags/ideology/" term="ideology"/>
+    <category scheme="http://existenceproof.net/tags/morality/" term="morality"/>
+    <category scheme="http://existenceproof.net/tags/theory/" term="theory"/>
+    <category scheme="http://existenceproof.net/tags/community/" term="community"/>
+    <category scheme="http://existenceproof.net/tags/communities/" term="communities"/>
+    <category scheme="http://existenceproof.net/tags/hackerspaces/" term="hackerspaces"/>
+    <category scheme="http://existenceproof.net/tags/creative communities/" term="creative communities"/>
+    <category scheme="http://existenceproof.net/tags/hackers/" term="hackers"/>
+    <category scheme="http://existenceproof.net/tags/hacker ethic/" term="hacker ethic"/>
+    <category scheme="http://existenceproof.net/tags/hacker culture/" term="hacker culture"/>
+    <category scheme="http://existenceproof.net/tags/culture/" term="culture"/>
+    <category scheme="http://existenceproof.net/tags/guidance/" term="guidance"/>
+    <category scheme="http://existenceproof.net/tags/noisebridge/" term="noisebridge"/>
+    <category scheme="http://existenceproof.net/tags/berlin/" term="berlin"/>
+    <category scheme="http://existenceproof.net/tags/kesselberg/" term="kesselberg"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[First Wikiconference USA and Updates on OA Signalling Project]]></title>
+    <link href="http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/"/>
+    <id>http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/</id>
+    <published>2014-06-11T14:27:25.000Z</published>
+    <updated>2014-06-11T23:42:06.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <category scheme="http://existenceproof.net/tags/wikipedia/" term="wikipedia"/>
+    <category scheme="http://existenceproof.net/tags/wikimedia/" term="wikimedia"/>
+    <category scheme="http://existenceproof.net/tags/wikis/" term="wikis"/>
+    <category scheme="http://existenceproof.net/tags/wikiconferenceusa/" term="wikiconferenceusa"/>
+    <category scheme="http://existenceproof.net/tags/community/" term="community"/>
+    <category scheme="http://existenceproof.net/tags/learning/" term="learning"/>
+    <category scheme="http://existenceproof.net/tags/presentations/" term="presentations"/>
+    <category scheme="http://existenceproof.net/tags/friends/" term="friends"/>
+    <category scheme="http://existenceproof.net/tags/allyship/" term="allyship"/>
+    <category scheme="http://existenceproof.net/tags/feminism/" term="feminism"/>
+    <category scheme="http://existenceproof.net/tags/inclusion/" term="inclusion"/>
+    <category scheme="http://existenceproof.net/tags/OA signalling/" term="OA signalling"/>
+    <category scheme="http://existenceproof.net/tags/open access/" term="open access"/>
+    <category scheme="http://existenceproof.net/tags/free culture/" term="free culture"/>
+    <category scheme="http://existenceproof.net/tags/open source/" term="open source"/>
+    <category scheme="http://existenceproof.net/tags/free software/" term="free software"/>
+    <category scheme="http://existenceproof.net/tags/references/" term="references"/>
+    <category scheme="http://existenceproof.net/tags/citations/" term="citations"/>
+    <category scheme="http://existenceproof.net/tags/scholarly literature/" term="scholarly literature"/>
+    <category scheme="http://existenceproof.net/tags/WikiProject Open Access/" term="WikiProject Open Access"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[Villagecraft Update and New Workshop on Starting A Hackerspace]]></title>
     <link href="http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/"/>
     <id>http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/</id>
-    <published>2014-06-11T02:30:55.000Z</published>
-    <updated>2014-06-11T03:36:05.000Z</updated>
+    <published>2014-06-10T17:30:55.000Z</published>
+    <updated>2014-06-11T23:44:43.000Z</updated>
     <content type="html"><![CDATA[<p>Just met up with Hayley from <a href="http://villagecraft.org/" target="_blank">Villagecraft.org</a> at sudo room. Got some updates about the progress of their project, including some exciting patterns from their user base and general solidarity across creative/learning community life!</p>
 <p>Zero<sup>th</sup>, they&#39;re hosting a Dinner Party this Thursday June 12th at 6pm, register on villagecraft itself to join.</p>
 <p>First, they&#39;re going <em>open source</em>, which means they&#39;ll finally be publishing their source code online, opening up the prospect of review, contribution, and creativity with the very platform that runs the villagecraft website. They support a community of hosts and attendees sharing knowledge at workshop-style events in the east bay area. This is certainly a project <a href="https://lists.sudoroom.org/" target="_blank">sudoers</a> will be interested in examining more closely.</p>
 <p>Second, they have a <strong>plan</strong> ;). Meaning, they&#39;ve got a list of features <em>and</em> a list of bugs that they plan to get through to truly improve the villagecraft experience. Hayley spends a lot of time in the field, doing manual coordination, listening, and problem-solving. The results of her lessons she shares back to the rest of the team, most of whom write the bulk of the villagecraft software.</p>
 <p>Third, and finally, the future is uncertain! New folks are getting on board to write software, and the organic user community is growing in interesting and strange ways (more on that below). There are open questions, big opportunities, and a clear need to grow wider (and not necessarily spend too much time going so deep). Hayley reached out on this particular accord, hoping to include more participation from hackerspace, techie, hardware/software/wetware communities. It seems to me the opportunity to cross sudo room‘s events and villagecraft’s community platform is certainly real, and very exciting.</p>
 <p>As for these user patterns. Two things Hayley shared are:<br>1. The villagecraft user base is growing inter-connected as an organic community.<br>2. Some of their users take several workshops across domains, rather than focus on individual domains.</p>
-<p>These patterns seem to imply that the time to widen and grow the community is nigh. Further, the intuitive notion that users will persue learning experiences based on the domain-specificity of their interests may very well be untrue thusfar!</p>
+<p>These patterns seem to imply that the time to widen and grow the community is nigh. Further, the intuitive notion that users will pursue learning experiences based on the domain-specificity of their interests may very well be untrue thusfar!</p>
 <p>Lastly, Hayley, Jeremy, and I shared some of our interests and experiences working in creative communities, using consensus, using safe space, positioning do-ocracy over bureaucracy, celebrating good-faith collaboration, and confronting bad-faith participants. As a result of our discussion, looks like I&#39;ll be hosting a workshop on <a href="http://villagecraft.org/w/3c71912c-starting-a-hackerspace" target="_blank">Starting a Hackerspace</a>, based on the <a href="https://sudoroom.org/" target="_blank">sudo room</a> experience, conversations with folks starting hackerspaces locally as well as remotely, and my recent post on an off-the-cuff protocol: <a href="http://existenceproof.net/zero-to-hackerspace-in-eight-steps/">8 steps to start a hackerspace</a>. Additionally, Jeremy will be hosting one on <em>Consensus Process</em>, which we all agreed is much needed and even long-overdue.</p>
 <p>Very exciting ;).</p>
 ]]></content>
@@ -40,7 +116,7 @@
     <title type="html"><![CDATA[Zero to Hackerspace in Eight Steps]]></title>
     <link href="http://existenceproof.net/zero-to-hackerspace-in-eight-steps/"/>
     <id>http://existenceproof.net/zero-to-hackerspace-in-eight-steps/</id>
-    <published>2014-06-09T23:14:05.000Z</published>
+    <published>2014-06-09T14:14:05.000Z</published>
     <updated>2014-06-09T23:46:50.000Z</updated>
     <content type="html"><![CDATA[<p>I have begun to discuss with some local folks about a nascent hackerspace in the east bay area. More details on that forthcoming. Reviewing some of our messages about this, I found an interesting little ditty. I wrote it in a stream of consciousness after an in-person meeting to try to quickly simplify my own mental model of starting a hackerspace.</p>
 <h2>Eight Steps to Hackerspace</h2>
@@ -80,7 +156,7 @@
     <title type="html"><![CDATA[ABC No Rio]]></title>
     <link href="http://existenceproof.net/abc-no-rio/"/>
     <id>http://existenceproof.net/abc-no-rio/</id>
-    <published>2014-06-05T22:41:19.000Z</published>
+    <published>2014-06-05T13:41:19.000Z</published>
     <updated>2014-06-05T20:08:17.000Z</updated>
     <content type="html"><![CDATA[<p>While in town for <a href="http://wikiconferenceusa.org/" target="_blank">WikiConference USA</a> I had the pleasure of spending a bit of extra time in New York City. Some kind souls were generous enough to spend their time with me, showing their spaces, answering questions, and generally mutually sharing our experiences. One such group who opened their doors and obliged an extended conversation is <a href="http://abcnorio.org/" target="_blank">ABC No Rio</a>.</p>
 <p>I stopped by the space previously, but no one was around, so I glanced at various (past and present) event postings on flyers and posters around the doors, though I couldn&#39;t make it to any I saw. However, I <em>was</em> able to step inside once I had a chance to schedule a conversation with two long-term volunteers of the space, who also are board members for the 501(c)3 non-profit organization that supports it. This organization exists primarily to keep ABC No Rio&#39;s physical location in community control, coordinate fund-raising for improvements (see notes about <a href="#rebuild">re-build</a> below), and to otherwise support the continued existence of the community. Otherwise, all the function of the space itself is performed by individual volunteers through the various sub-collectives of ABC No Rio, and one non-profit tenant of the building.</p>
@@ -133,7 +209,7 @@
     <title type="html"><![CDATA[WNDW and Pandoc Conversions]]></title>
     <link href="http://existenceproof.net/wndw-and-pandoc-conversions/"/>
     <id>http://existenceproof.net/wndw-and-pandoc-conversions/</id>
-    <published>2013-11-09T14:14:06.000Z</published>
+    <published>2013-11-09T05:14:06.000Z</published>
     <updated>2013-11-10T04:31:03.000Z</updated>
     <content type="html"><![CDATA[<p>Thanks to <a href="http://twitter.com/tunabananas" target="_blank">tunabananas</a>&#39; adventures in Berlin, I got to pick up a physical copy of <a href="http://wndw.net/" target="_blank">Wireless Networks in the Developing World</a> (WNDW). The book is a complete guide to running wireless networks in a variety of environments, including: background knowledge, regulatory information, technology resources, and community resources from experts in creating and maintaining these networks. It&#39;s an excellent source that I highly recommend to anyone interested in internet, wireless, mesh/local networking, community utilities, and information and communication technologies for development (ict4d).</p>
 <p>Further, you are entitled to copy, share, and remix the book since it is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution Share-Alike (cc-by-sa) license</a>, so long as your derivative work uses the same license (others can do the same to your version). </p>
@@ -178,7 +254,7 @@
     <title type="html"><![CDATA[Notes from Bay Area Drupal Camp (BADcamp)]]></title>
     <link href="http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/"/>
     <id>http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/</id>
-    <published>2013-10-30T10:59:24.000Z</published>
+    <published>2013-10-30T02:59:24.000Z</published>
     <updated>2013-10-30T11:11:08.000Z</updated>
     <content type="html"><![CDATA[<h2>Non-Profit Summit</h2>
 <p>Came in late. Marsh Arts Center in Berkeley has terrible wifi service for an event where apparently some folks want to be connected to the internet.</p>
@@ -739,7 +815,7 @@
     <title type="html"><![CDATA[A new blog]]></title>
     <link href="http://existenceproof.net/a-new-blog/"/>
     <id>http://existenceproof.net/a-new-blog/</id>
-    <published>2013-10-30T01:06:35.000Z</published>
+    <published>2013-10-29T17:06:35.000Z</published>
     <updated>2013-10-30T01:18:22.000Z</updated>
     <content type="html"><![CDATA[<p>Launching a new blog. This site is static HTML generated by Hexo, a nodejs application. I write the content in markdown first, which compiles to HTML.</p>
 <h2>What now?</h2>
@@ -756,7 +832,7 @@
     <title type="html"><![CDATA[An Open Social Movement Manifesto]]></title>
     <link href="http://existenceproof.net/an-open-social-movement-manifesto.html/"/>
     <id>http://existenceproof.net/an-open-social-movement-manifesto.html/</id>
-    <published>2013-07-09T19:32:00.000Z</published>
+    <published>2013-07-09T10:32:00.000Z</published>
     <updated>2013-10-30T07:52:08.000Z</updated>
     <content type="html"><![CDATA[<p>I have found theories for social movements, especially civil rights, anti-war, and even protest generally, to be wholly insufficient to capture substantial aspects of our current struggle for openness.</p>
 <p>Openness is not merely some product of technology, nor is it some new technology itself. Openness affords public good akin to notions of democracy. Both constitute negotiations of appropriate action, and fairness. We have seen various communities organize in support of openness, and it is about time we leverage this network structure&mdash;in fact there is no such luxury to wait:</p>
@@ -802,7 +878,7 @@
     <title type="html"><![CDATA[London, Cambridge, Oxford]]></title>
     <link href="http://existenceproof.net/london-cambridge-oxford.html/"/>
     <id>http://existenceproof.net/london-cambridge-oxford.html/</id>
-    <published>2013-07-09T12:27:00.000Z</published>
+    <published>2013-07-09T03:27:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>It is true much of the journey requires travel, logistics, negotiation of new landscapes, but the wandering can feel quite good. I flew in to South London at Gatwick, made the mistake of traveling farthest from my destination, so I took a long train through london, then a connection to King‘s Cross station to Cambridge. A friend set me up for the night at his new flat, and in the morning I walked just a few blocks to the Cambridge PLOS office. It wasn’t long in the UK until I began to take issue with the absurdity of placeness here. Every tiny street has its own name, and every little building. Often place names differ completely from address, and often addresses become complex since streets need not follow conventions like odds on one side, evens on the other. And good luck finding a street sign to know where you are. It is a comical, ironical place, but I do appreciate that for the most part, places are built to human dimensions, and confusion, more than anything, stems from history, the beaten path as it were. </p>
 <p>In cambridge I met some of the members of Makespace, a new hackerspace with great institutional support and a fantastic location provided through a relationship with King&#39;s College. In just a few months, the members built up quite a bit of infrastructure, providing a full toolshop including laser cutters (one in service, the other large but out of commission at the moment), 3D printer, and a store room full of all the necessary nicnacs. A clever little move was to use clear bins for member ephemera on a member shelf in the hallway—keeping things quite orderly, but transparent to get a clue onthe types of materials other members are tinkering with at the moment. The general governance of the group is odd—there are three founders who act as directors and make the necessary decisions for the space, including allocation of funds. There is some layer of trust in which members, especially those who had been around for some time, were relied upon more heavily to work things out and improve the functioning of the space. There are general discussions on the email list, and general meetings, to work out different points of view, etc. There are more than a handful systems in place to manage the space, including a sort of “training the trainer” approach that requires a designated party to train you on using specific equipment before you can take it on yourself. This is for safety, and for the preservation of the equipment. </p>
@@ -835,7 +911,7 @@
     <title type="html"><![CDATA[Berlin]]></title>
     <link href="http://existenceproof.net/berlin.html/"/>
     <id>http://existenceproof.net/berlin.html/</id>
-    <published>2013-06-27T08:44:00.000Z</published>
+    <published>2013-06-26T23:44:00.000Z</published>
     <updated>2013-10-30T08:40:58.000Z</updated>
     <content type="html"><![CDATA[<p>My time in Berlin was studded with generous hospitality, coupled by sufficient aimless wandering. It was just enough time to poke my head about and really get a feel for the city. I was lucky when I arrived it was cloudy, then rainy, and kept on that pattern for most of my days there. The final few days were sun-filled and glorious. If there were better weather I would have seriously believed I could move right in. Even the summer cold was enough to remind me, I am a spoiled desert creature of California. That being said, I can still imagine spending time there… just not forever, or maybe just not the winter.</p>
 <p>Berlin is a locus for the surrounding European area, and Germany itself, not to mention a harbor for various migrants and ex-pats. Some years and mini-generations of migration and gentrification have welcomed, shunned, embraced, discarded, and churned the city through. It is such a large city that development is plentiful, but does leave many buildings untouched, quite a bit of existing infrastructure is just fine as is. That was the remarkable side for me, while not an extraordinarily tall city with sky-scrapers, there are very large swaths with 4-5 story buildings, built close together. This affords space for various uses, from housing to business, squats to co-working, markets to hackerspaces. The narrative today is represented best through the squats of yore, like Tacheles, now closed by building owners staking claim across the city to fuel business districts, housing enclaves, gentrifiers, and the many people generally coming through the city. The culture of these spaces, the mentality in various modes of collectivity, individuality and creativity remain. </p>
@@ -871,7 +947,7 @@
     <title type="html"><![CDATA[Post-Conference]]></title>
     <link href="http://existenceproof.net/post-conference.html/"/>
     <id>http://existenceproof.net/post-conference.html/</id>
-    <published>2013-06-23T05:58:00.000Z</published>
+    <published>2013-06-22T20:58:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>The train is nearly silent. There is a faint whistle, but quieter even than a rachetless-casette bike-ride through sparsely populated hills. I am on my way to Lausanne from Geneva, North of the lake. Tomorrow I will catch a bus to Berlin, which I now regret&mdash;who knows if I will get to sleep on the overnight ride, ha! Hopefully it will be worth the $70 savings? Heh, only one way to see.</p>
 <h2>Hack the Planet</h2>
@@ -904,7 +980,7 @@
     <title type="html"><![CDATA[Lausanne to Prague to Berlin]]></title>
     <link href="http://existenceproof.net/lausanne-to-prague-to-berlin.html/"/>
     <id>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</id>
-    <published>2013-06-23T05:58:00.000Z</published>
+    <published>2013-06-22T20:58:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Got some sleep in, not as much as I would have liked, but what can I expect having accidentally chosen ‘’the worst seat on the bus‘’ with no leg-room, haha?</p>
 <p>On the other hand this bus, a new one for the agency providing me service, is more akin to an airplane in some senses. These little screens at each seat play movies, music, games, some hilarious Czech student documentaries (very odd), and six episodes of one television show: ‘’Friends‘’ ^.^ heh.</p>
@@ -930,7 +1006,7 @@
     <title type="html"><![CDATA[Arrival]]></title>
     <link href="http://existenceproof.net/arrival.html/"/>
     <id>http://existenceproof.net/arrival.html/</id>
-    <published>2013-06-19T08:24:00.000Z</published>
+    <published>2013-06-18T23:24:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>The Geneva airport is not poorly designed, works well enough to get through from plane to train into the city. Not enough maps though, had to resort to the phone directions. </p>
 <p>The mountainscape was an impressive view, I hope to take it all in later. Ah, the humidity is wonderful, overcast but muggy, what a pleasure!</p>
@@ -945,7 +1021,7 @@
     <title type="html"><![CDATA[Stop in New York, and Lift]]></title>
     <link href="http://existenceproof.net/stop-in-new-york-and-lift.html/"/>
     <id>http://existenceproof.net/stop-in-new-york-and-lift.html/</id>
-    <published>2013-06-18T20:55:00.000Z</published>
+    <published>2013-06-18T11:55:00.000Z</published>
     <updated>2013-10-30T07:59:47.000Z</updated>
     <content type="html"><![CDATA[<p>I &lt;3 New York city. Yes, in the cheesiest possible way because I do not live there and if I did I would probably complain (an East Coast sort of thing I can understand, but with which I must strain to emphathize). It is the mark of a new New Yorker that the irks and annoyances of a rub-you-the-wrong way type of town float up to the top of your head and bubble out&mdash;least-expected&mdash;at earliest invonvenience, like what has been happening with my California transplant cousin Debbie! No need to worry, the kids are good, the neighborhood is excellent, and despite all the complexities of maximal urban density, Debbie and Marc&#39;s family is doing well, and they have <em>much</em> for which to be proud. Lucas is moving out to San Francisco this fall for school, I will see them again in August&mdash;a chance to ‘’chill out‘’ ;). </p>
 <p>I get on quite well with the NY humidity, despite being a desert creature used to high and dry temperatures. I love that sweating is universal and mandatory, no ifs, ands, or buts about it, we all have to stink. But more than the weather, its the hubbub and density that prevail, lucky me only around for the bustle and none of the hussle. Quick transport, heavy on the walking, low ceilings, narrow hallways, old rickety elevators, cute little everythings, function stacking, squeezing out every ounce of space&mdash;oh, efficiency never felt so good. Cities, you have a lot to learn, it should be way easier to repurpose all these ideas and all this praxis. Perhaps such is the essence of politics, and the friction of translation. </p>
@@ -975,7 +1051,7 @@
     <title type="html"><![CDATA[On My Way to Geneva]]></title>
     <link href="http://existenceproof.net/on-my-way-to-geneva.html/"/>
     <id>http://existenceproof.net/on-my-way-to-geneva.html/</id>
-    <published>2013-06-17T09:12:00.000Z</published>
+    <published>2013-06-17T00:12:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Writing this on a plane, coasting over the US toward Newark, NJ where I will stay for the evening, catching a connection to Geneva tomorrow morning. Laying it all bare here (that is right folks&mdash;all honesty!), I missed my connecting flight because I showed up (on time) to Oakland Airport (OAK) rather than San Francisco (SFO). &gt;.&lt;</p>
 <p>It took me all until I reached the terminals to realize there was no United airline and /no/ flight waiting for me in Oakland. </p>
@@ -994,7 +1070,7 @@
     <title type="html"><![CDATA[Launching a new blog on Pelican]]></title>
     <link href="http://existenceproof.net/launching-a-new-blog-on-pelican.html/"/>
     <id>http://existenceproof.net/launching-a-new-blog-on-pelican.html/</id>
-    <published>2013-06-16T23:12:00.000Z</published>
+    <published>2013-06-16T14:12:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Trying my first post :D</p>
 <p><a href="http://getplican.com" target="_blank">Pelican</a> turned out to be a bit of a pain in the ass. No holds barred here, startup was fairly annoying and would probably be much harder for folks /completely/ unfamiliar with python applications.</p>
