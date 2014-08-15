@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://existenceproof.net/bring-your-os-with-you/</loc>
+    <lastmod>2014-08-15T23:16:42.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://existenceproof.net/projects/index.html</loc>
     <lastmod>2014-07-21T09:33:06.000Z</lastmod>
   </url>
@@ -11,10 +15,6 @@
   <url>
     <loc>http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/</loc>
     <lastmod>2014-06-11T23:44:43.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/</loc>
-    <lastmod>2014-06-11T23:42:06.000Z</lastmod>
   </url>
   <url>
     <loc>http://existenceproof.net/zero-to-hackerspace-in-eight-steps/</loc>

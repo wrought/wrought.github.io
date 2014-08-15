@@ -3,17 +3,98 @@
   <title><![CDATA[@wrought]]></title>
   <link href="http://existenceproof.net/atom.xml" rel="self"/>
   <link href="http://existenceproof.net"/>
-  <updated>2014-07-21T09:33:14.658Z</updated>
+  <updated>2014-08-15T23:22:38.228Z</updated>
   <id>http://existenceproof.net/</id>
   <author>
     <name><![CDATA[Matt Senate]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[Bring Your OS With You]]></title>
+    <link href="http://existenceproof.net/bring-your-os-with-you/"/>
+    <id>http://existenceproof.net/bring-your-os-with-you/</id>
+    <published>2014-08-15T20:40:24.000Z</published>
+    <updated>2014-08-15T23:16:42.000Z</updated>
+    <content type="html"><![CDATA[<p>I support and celebrate operating systems based on Linux, well, because there are not many better options. ;) On the other hand, I also believe that community-supported tools and systems are worth our participation and involvement, because for what we all put in, we each, and collectively, get much more out. Simple as that.</p>
+<p>Right now I run <a href="http://crunchbang.com/" target="_blank">CrunchBang</a>, a snappy, simplified, developer-conscious flavor of <a href="https://en.wikipedia.org/wiki/Debian" target="_blank">Debian</a>, notably running the OpenBox window manager rather than something heftier like GNOME.</p>
+<p>Since installing CrunchBang, I have come to appreciate its simplicity so much that I have wanted to continue using it, with all of my alterations, even as I upgrade my laptop. In this post, I outline a strategy to simplify management of your Linux system based on my experience so far with my operating system.</p>
+<blockquote>
+<p>Bring your OS with you</p>
+</blockquote>
+<ol>
+<li>Pick an operating system. (For me at the moment, it&#39;s CrunchBang)<ol>
+<li>Download an <code>.iso</code> (image) file</li>
+<li>Use <code>unetbootin</code> or <code>dd</code> (<a href="http://linuxcommand.org/man_pages/dd1.html" target="_blank">details</a>) to copy the image to a usb drive<ol>
+<li>For using <code>dd</code>, find out the device names of your disks with <code>dmesg | grep sd</code>, which allows you to see details about drives and when they are connected.</li>
+<li>Pick the right locations and fire <strong>[WARNING, MAY DESTROY STUFF]</strong>:<br> <code>dd if=/home/username/downloads/linux-foo-bar-0.1.iso of=/dev/sdBBB</code></li>
+<li>Once finished, you can reboot, select the flash drive as the boot disk (usually change some settings in BIOS and then use some key like F12 to select boot device from a list)</li>
+<li>Follow your OS&#39;s installation instructions.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Exact backup to empty drive with <code>dd</code><ol>
+<li>Boot from a live OS (live disk, like CD or usb drive with linux on it)</li>
+<li>Again, find the correct device names of disks first</li>
+<li>This time copy from your computer&#39;s disk instead of an image to some backup file <strong>[WARNING, MAY DESTROY STUFF]</strong>:<br> <code>dd if=/dev/sdAAA of=/dev/sdBBB</code></li>
+<li>To recover a <em>borked</em> system, you can always copy in the other direction to restore <strong>[WARNING, MAY DESTROY STUFF]</strong>:<br> <code>dd if=/dev/sdBBB of=/dev/sdAAA</code></li>
+</ol>
+</li>
+<li>Backup with <code>horcrux</code> on top of <code>duplicity</code> (<a href="http://chrispoole.com/project/horcrux/" target="_blank">details</a>)<ol>
+<li>This is for more magic, like multiple restoration points, partial backups, and most importantly, backing up to multiple locations in case of multiple failures</li>
+<li><code>horcrux</code> is pretty much a <code>bash</code> script for <code>duplicity</code>, so read it and <code>man duplicity</code>!</li>
+</ol>
+</li>
+<li>Store <em>special</em> files with <code>tomb</code> (<a href="https://www.dyne.org/software/tomb/" target="_blank">details</a>)<ol>
+<li>A fun and tiny way to bury bits on your disk, excellent alternative to full-disk encryption schemes</li>
+</ol>
+</li>
+<li>Migrate to new devices with <code>dd</code> and <code>lvm</code><ol>
+<li>When it&#39;s time to upgrade or replace your computer, you can carry everything with you. There is only one important question:<ol>
+<li>Is the destination hard drive bigger or smaller than my current one?<ol>
+<li>Either way you will have to resize the <em>physical volume</em> and <em>logical volumes</em> in question, but if the destination drive is bigger, than you can copy now and resize later ;)<ol>
+<li>Resizing un-encrypted partitions can be as easy as running <code>gparted</code>, <code>parted</code>, <code>fdisk</code>, or simply with <code>lvm</code> commands</li>
+</ol>
+</li>
+<li>However, encrypted partitions are not as easy to manage. See notes below for resizing encrypted partitions:</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><em>Pro-tip:</em> Check the progress of <code>dd</code> with <code>sudo kill -USR1 `pidof dd` </code></p>
+</blockquote>
+<h3>Enlarging LUKS Encryption over LVM</h3>
+<p>These days, it‘s easy to implement full-disk encryption at the time of your operating system’s installation. Further, it&#39;s usually recommended to use LVM to manage your disks, even on a personal computer. <code>lvm</code> creates a layer of abstraction on top of typical partitions, which can make some forms of disk management much easier or less risky. If you installed a recent distribution of linux based on Debian, and installed fill-disk encryption it is likely you are using LUKS over LVM. </p>
+<p>For debian-based systems, this guide called <a href="https://help.ubuntu.com/community/ResizeEncryptedPartitions" target="_blank">Resize Encrypted Partitions</a> should be close to what you need, with some noteworthy updates:</p>
+<ol>
+<li><strong>Step 1.</strong> When creating a new partition “next to and to the left of (after) your crypt”, don&#39;t let this language confuse you. You want the encrypted partition to have a new partition immediately following it so that you may use <code>fdisk</code> to overwrite this new partition by expanding the encrypted partition over the new partition. This should help make more sense of the situation. It&#39;s likely that you have <code>/dev/sda1</code> with <code>/boot</code> on it and <code>/dev/sda2</code> as an extended partition that contains your encrypted partition (something like <code>/dev/sda5</code> maybe, depending on how many partitions you made at installation and later with LVM). This is why it is likely that creating another Linux partition inside of the <code>/dev/sda2</code> extended partition would likely use the name <code>/dev/sda6</code> as the instructions note. If you view this in <code>gparted</code> you would see <code>/dev/sda2</code> wrapped around the encrypted <code>/dev/sda5</code> as well as around the following new partition <code>/dev/sda6</code>, ending the wrapper.</li>
+<li><strong>Step 2.</strong> Don&#39;t bother with <code>/dev/urandom</code> it takes forever, just use <code>/dev/zero</code> or if you prefer, you can use <code>shred</code> instead of <code>dd</code> with the <code>--iterations</code> flag as such: <code>sudo shred --iterations=1 /dev/sda6</code></li>
+<li><strong>Step 3.</strong> This is a very confusing reference. You are instructed to use <code>fdisk</code> in the same process as it is used for shrinking partitions in the instructions preceeding these (above). However, there are superfluous warnings, commands, and instructions that make it difficult to implement here. The important concept to note, in my opinion, is simply that you are using fdisk to expand your encrypted partition over the new, adjacent partition. This means you should use <code>fdisk /dev/sda</code> to <code>d</code> delete partitions <code>6</code>, <code>5</code> and <code>2</code>, then <code>n</code> re-create them as partitions <code>2</code> (<code>e</code> expanded) and <code>5</code> (<code>l</code> logical) such that (by default) <code>/dev/sda5</code> expands over the blocks previously partitioned for <code>/dev/sda6</code>. Check with <code>p</code> and when you are satisfied, <code>w</code> write to the disk.</li>
+<li>After <strong>Step 8.</strong> If you are troubleshooting the process, to deactivate your LVM, use <code>sudo vgchange -an</code></li>
+<li><strong>Step 11.</strong> Repeat as necessary for each <em>logical volume</em> you wish to resize (e.g. <code>root</code>, <code>swap</code>, and <code>home</code>)</li>
+<li><strong>Step 12.</strong> You won&#39;t be able to resize the filesystem for swap. If you do resize a swap volume, when you reboot and complete the resizing successfully, simply use <code>mkswap</code> appropriately such as:<br> <code>sudo swapoff</code><br> <code>sudo mkswap /dev/crypt1/swap_1</code><br> <code>sudo swapon</code></li>
+</ol>
+<h2>The Future</h2>
+<p>Maybe in the future I will switch to ArchLinux to <a href="https://en.wikipedia.org/wiki/Rolling_release/" target="_blank">avoid major upgrade headaches</a>, get on board with the new future-of-linux features, and benefit from a great community with lots of documentation..</p>
+<p>In fact, I&#39;m downloading Arch right now… ;)</p>
+]]></content>
+    <category scheme="http://existenceproof.net/tags/operating system/" term="operating system"/>
+    <category scheme="http://existenceproof.net/tags/os/" term="os"/>
+    <category scheme="http://existenceproof.net/tags/linux/" term="linux"/>
+    <category scheme="http://existenceproof.net/tags/crunchbang/" term="crunchbang"/>
+    <category scheme="http://existenceproof.net/tags/philosophy/" term="philosophy"/>
+    <category scheme="http://existenceproof.net/tags/style/" term="style"/>
+    <category scheme="http://existenceproof.net/tags/tools/" term="tools"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[One Rule to Guide Them All]]></title>
     <link href="http://existenceproof.net/one_rule_to_guide_them_all/"/>
     <id>http://existenceproof.net/one_rule_to_guide_them_all/</id>
-    <published>2014-07-20T08:52:25.000Z</published>
+    <published>2014-07-20T17:52:25.000Z</published>
     <updated>2014-07-21T08:55:26.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>“Food must be shared.” &mdash; <a href="https://kesselberg.info" target="_blank">Kesselberg</a> (Community)</p>
@@ -58,38 +139,10 @@
     <category scheme="http://existenceproof.net/tags/kesselberg/" term="kesselberg"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[First Wikiconference USA and Updates on OA Signalling Project]]></title>
-    <link href="http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/"/>
-    <id>http://existenceproof.net/first-wikiconference-usa-and-updates-on-oa-signalling-project/</id>
-    <published>2014-06-11T14:27:25.000Z</published>
-    <updated>2014-06-11T23:42:06.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <category scheme="http://existenceproof.net/tags/wikipedia/" term="wikipedia"/>
-    <category scheme="http://existenceproof.net/tags/wikimedia/" term="wikimedia"/>
-    <category scheme="http://existenceproof.net/tags/wikis/" term="wikis"/>
-    <category scheme="http://existenceproof.net/tags/wikiconferenceusa/" term="wikiconferenceusa"/>
-    <category scheme="http://existenceproof.net/tags/community/" term="community"/>
-    <category scheme="http://existenceproof.net/tags/learning/" term="learning"/>
-    <category scheme="http://existenceproof.net/tags/presentations/" term="presentations"/>
-    <category scheme="http://existenceproof.net/tags/friends/" term="friends"/>
-    <category scheme="http://existenceproof.net/tags/allyship/" term="allyship"/>
-    <category scheme="http://existenceproof.net/tags/feminism/" term="feminism"/>
-    <category scheme="http://existenceproof.net/tags/inclusion/" term="inclusion"/>
-    <category scheme="http://existenceproof.net/tags/OA signalling/" term="OA signalling"/>
-    <category scheme="http://existenceproof.net/tags/open access/" term="open access"/>
-    <category scheme="http://existenceproof.net/tags/free culture/" term="free culture"/>
-    <category scheme="http://existenceproof.net/tags/open source/" term="open source"/>
-    <category scheme="http://existenceproof.net/tags/free software/" term="free software"/>
-    <category scheme="http://existenceproof.net/tags/references/" term="references"/>
-    <category scheme="http://existenceproof.net/tags/citations/" term="citations"/>
-    <category scheme="http://existenceproof.net/tags/scholarly literature/" term="scholarly literature"/>
-    <category scheme="http://existenceproof.net/tags/WikiProject Open Access/" term="WikiProject Open Access"/>
-  </entry>
-  <entry>
     <title type="html"><![CDATA[Villagecraft Update and New Workshop on Starting A Hackerspace]]></title>
     <link href="http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/"/>
     <id>http://existenceproof.net/villagecraft-update-and-new-workshop-on-starting-a-hackerspace/</id>
-    <published>2014-06-10T17:30:55.000Z</published>
+    <published>2014-06-11T02:30:55.000Z</published>
     <updated>2014-06-11T23:44:43.000Z</updated>
     <content type="html"><![CDATA[<p>Just met up with Hayley from <a href="http://villagecraft.org/" target="_blank">Villagecraft.org</a> at sudo room. Got some updates about the progress of their project, including some exciting patterns from their user base and general solidarity across creative/learning community life!</p>
 <p>Zero<sup>th</sup>, they&#39;re hosting a Dinner Party this Thursday June 12th at 6pm, register on villagecraft itself to join.</p>
@@ -116,7 +169,7 @@
     <title type="html"><![CDATA[Zero to Hackerspace in Eight Steps]]></title>
     <link href="http://existenceproof.net/zero-to-hackerspace-in-eight-steps/"/>
     <id>http://existenceproof.net/zero-to-hackerspace-in-eight-steps/</id>
-    <published>2014-06-09T14:14:05.000Z</published>
+    <published>2014-06-09T23:14:05.000Z</published>
     <updated>2014-06-09T23:46:50.000Z</updated>
     <content type="html"><![CDATA[<p>I have begun to discuss with some local folks about a nascent hackerspace in the east bay area. More details on that forthcoming. Reviewing some of our messages about this, I found an interesting little ditty. I wrote it in a stream of consciousness after an in-person meeting to try to quickly simplify my own mental model of starting a hackerspace.</p>
 <h2>Eight Steps to Hackerspace</h2>
@@ -156,7 +209,7 @@
     <title type="html"><![CDATA[ABC No Rio]]></title>
     <link href="http://existenceproof.net/abc-no-rio/"/>
     <id>http://existenceproof.net/abc-no-rio/</id>
-    <published>2014-06-05T13:41:19.000Z</published>
+    <published>2014-06-05T22:41:19.000Z</published>
     <updated>2014-06-05T20:08:17.000Z</updated>
     <content type="html"><![CDATA[<p>While in town for <a href="http://wikiconferenceusa.org/" target="_blank">WikiConference USA</a> I had the pleasure of spending a bit of extra time in New York City. Some kind souls were generous enough to spend their time with me, showing their spaces, answering questions, and generally mutually sharing our experiences. One such group who opened their doors and obliged an extended conversation is <a href="http://abcnorio.org/" target="_blank">ABC No Rio</a>.</p>
 <p>I stopped by the space previously, but no one was around, so I glanced at various (past and present) event postings on flyers and posters around the doors, though I couldn&#39;t make it to any I saw. However, I <em>was</em> able to step inside once I had a chance to schedule a conversation with two long-term volunteers of the space, who also are board members for the 501(c)3 non-profit organization that supports it. This organization exists primarily to keep ABC No Rio&#39;s physical location in community control, coordinate fund-raising for improvements (see notes about <a href="#rebuild">re-build</a> below), and to otherwise support the continued existence of the community. Otherwise, all the function of the space itself is performed by individual volunteers through the various sub-collectives of ABC No Rio, and one non-profit tenant of the building.</p>
@@ -209,7 +262,7 @@
     <title type="html"><![CDATA[WNDW and Pandoc Conversions]]></title>
     <link href="http://existenceproof.net/wndw-and-pandoc-conversions/"/>
     <id>http://existenceproof.net/wndw-and-pandoc-conversions/</id>
-    <published>2013-11-09T05:14:06.000Z</published>
+    <published>2013-11-09T14:14:06.000Z</published>
     <updated>2013-11-10T04:31:03.000Z</updated>
     <content type="html"><![CDATA[<p>Thanks to <a href="http://twitter.com/tunabananas" target="_blank">tunabananas</a>&#39; adventures in Berlin, I got to pick up a physical copy of <a href="http://wndw.net/" target="_blank">Wireless Networks in the Developing World</a> (WNDW). The book is a complete guide to running wireless networks in a variety of environments, including: background knowledge, regulatory information, technology resources, and community resources from experts in creating and maintaining these networks. It&#39;s an excellent source that I highly recommend to anyone interested in internet, wireless, mesh/local networking, community utilities, and information and communication technologies for development (ict4d).</p>
 <p>Further, you are entitled to copy, share, and remix the book since it is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution Share-Alike (cc-by-sa) license</a>, so long as your derivative work uses the same license (others can do the same to your version). </p>
@@ -254,7 +307,7 @@
     <title type="html"><![CDATA[Notes from Bay Area Drupal Camp (BADcamp)]]></title>
     <link href="http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/"/>
     <id>http://existenceproof.net/notes-from-bay-area-drupal-camp-(badcamp)/</id>
-    <published>2013-10-30T02:59:24.000Z</published>
+    <published>2013-10-30T10:59:24.000Z</published>
     <updated>2013-10-30T11:11:08.000Z</updated>
     <content type="html"><![CDATA[<h2>Non-Profit Summit</h2>
 <p>Came in late. Marsh Arts Center in Berkeley has terrible wifi service for an event where apparently some folks want to be connected to the internet.</p>
@@ -815,7 +868,7 @@
     <title type="html"><![CDATA[A new blog]]></title>
     <link href="http://existenceproof.net/a-new-blog/"/>
     <id>http://existenceproof.net/a-new-blog/</id>
-    <published>2013-10-29T17:06:35.000Z</published>
+    <published>2013-10-30T01:06:35.000Z</published>
     <updated>2013-10-30T01:18:22.000Z</updated>
     <content type="html"><![CDATA[<p>Launching a new blog. This site is static HTML generated by Hexo, a nodejs application. I write the content in markdown first, which compiles to HTML.</p>
 <h2>What now?</h2>
@@ -832,7 +885,7 @@
     <title type="html"><![CDATA[An Open Social Movement Manifesto]]></title>
     <link href="http://existenceproof.net/an-open-social-movement-manifesto.html/"/>
     <id>http://existenceproof.net/an-open-social-movement-manifesto.html/</id>
-    <published>2013-07-09T10:32:00.000Z</published>
+    <published>2013-07-09T19:32:00.000Z</published>
     <updated>2013-10-30T07:52:08.000Z</updated>
     <content type="html"><![CDATA[<p>I have found theories for social movements, especially civil rights, anti-war, and even protest generally, to be wholly insufficient to capture substantial aspects of our current struggle for openness.</p>
 <p>Openness is not merely some product of technology, nor is it some new technology itself. Openness affords public good akin to notions of democracy. Both constitute negotiations of appropriate action, and fairness. We have seen various communities organize in support of openness, and it is about time we leverage this network structure&mdash;in fact there is no such luxury to wait:</p>
@@ -878,7 +931,7 @@
     <title type="html"><![CDATA[London, Cambridge, Oxford]]></title>
     <link href="http://existenceproof.net/london-cambridge-oxford.html/"/>
     <id>http://existenceproof.net/london-cambridge-oxford.html/</id>
-    <published>2013-07-09T03:27:00.000Z</published>
+    <published>2013-07-09T12:27:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>It is true much of the journey requires travel, logistics, negotiation of new landscapes, but the wandering can feel quite good. I flew in to South London at Gatwick, made the mistake of traveling farthest from my destination, so I took a long train through london, then a connection to King‘s Cross station to Cambridge. A friend set me up for the night at his new flat, and in the morning I walked just a few blocks to the Cambridge PLOS office. It wasn’t long in the UK until I began to take issue with the absurdity of placeness here. Every tiny street has its own name, and every little building. Often place names differ completely from address, and often addresses become complex since streets need not follow conventions like odds on one side, evens on the other. And good luck finding a street sign to know where you are. It is a comical, ironical place, but I do appreciate that for the most part, places are built to human dimensions, and confusion, more than anything, stems from history, the beaten path as it were. </p>
 <p>In cambridge I met some of the members of Makespace, a new hackerspace with great institutional support and a fantastic location provided through a relationship with King&#39;s College. In just a few months, the members built up quite a bit of infrastructure, providing a full toolshop including laser cutters (one in service, the other large but out of commission at the moment), 3D printer, and a store room full of all the necessary nicnacs. A clever little move was to use clear bins for member ephemera on a member shelf in the hallway—keeping things quite orderly, but transparent to get a clue onthe types of materials other members are tinkering with at the moment. The general governance of the group is odd—there are three founders who act as directors and make the necessary decisions for the space, including allocation of funds. There is some layer of trust in which members, especially those who had been around for some time, were relied upon more heavily to work things out and improve the functioning of the space. There are general discussions on the email list, and general meetings, to work out different points of view, etc. There are more than a handful systems in place to manage the space, including a sort of “training the trainer” approach that requires a designated party to train you on using specific equipment before you can take it on yourself. This is for safety, and for the preservation of the equipment. </p>
@@ -911,7 +964,7 @@
     <title type="html"><![CDATA[Berlin]]></title>
     <link href="http://existenceproof.net/berlin.html/"/>
     <id>http://existenceproof.net/berlin.html/</id>
-    <published>2013-06-26T23:44:00.000Z</published>
+    <published>2013-06-27T08:44:00.000Z</published>
     <updated>2013-10-30T08:40:58.000Z</updated>
     <content type="html"><![CDATA[<p>My time in Berlin was studded with generous hospitality, coupled by sufficient aimless wandering. It was just enough time to poke my head about and really get a feel for the city. I was lucky when I arrived it was cloudy, then rainy, and kept on that pattern for most of my days there. The final few days were sun-filled and glorious. If there were better weather I would have seriously believed I could move right in. Even the summer cold was enough to remind me, I am a spoiled desert creature of California. That being said, I can still imagine spending time there… just not forever, or maybe just not the winter.</p>
 <p>Berlin is a locus for the surrounding European area, and Germany itself, not to mention a harbor for various migrants and ex-pats. Some years and mini-generations of migration and gentrification have welcomed, shunned, embraced, discarded, and churned the city through. It is such a large city that development is plentiful, but does leave many buildings untouched, quite a bit of existing infrastructure is just fine as is. That was the remarkable side for me, while not an extraordinarily tall city with sky-scrapers, there are very large swaths with 4-5 story buildings, built close together. This affords space for various uses, from housing to business, squats to co-working, markets to hackerspaces. The narrative today is represented best through the squats of yore, like Tacheles, now closed by building owners staking claim across the city to fuel business districts, housing enclaves, gentrifiers, and the many people generally coming through the city. The culture of these spaces, the mentality in various modes of collectivity, individuality and creativity remain. </p>
@@ -947,7 +1000,7 @@
     <title type="html"><![CDATA[Post-Conference]]></title>
     <link href="http://existenceproof.net/post-conference.html/"/>
     <id>http://existenceproof.net/post-conference.html/</id>
-    <published>2013-06-22T20:58:00.000Z</published>
+    <published>2013-06-23T05:58:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>The train is nearly silent. There is a faint whistle, but quieter even than a rachetless-casette bike-ride through sparsely populated hills. I am on my way to Lausanne from Geneva, North of the lake. Tomorrow I will catch a bus to Berlin, which I now regret&mdash;who knows if I will get to sleep on the overnight ride, ha! Hopefully it will be worth the $70 savings? Heh, only one way to see.</p>
 <h2>Hack the Planet</h2>
@@ -980,7 +1033,7 @@
     <title type="html"><![CDATA[Lausanne to Prague to Berlin]]></title>
     <link href="http://existenceproof.net/lausanne-to-prague-to-berlin.html/"/>
     <id>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</id>
-    <published>2013-06-22T20:58:00.000Z</published>
+    <published>2013-06-23T05:58:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Got some sleep in, not as much as I would have liked, but what can I expect having accidentally chosen ‘’the worst seat on the bus‘’ with no leg-room, haha?</p>
 <p>On the other hand this bus, a new one for the agency providing me service, is more akin to an airplane in some senses. These little screens at each seat play movies, music, games, some hilarious Czech student documentaries (very odd), and six episodes of one television show: ‘’Friends‘’ ^.^ heh.</p>
@@ -1006,7 +1059,7 @@
     <title type="html"><![CDATA[Arrival]]></title>
     <link href="http://existenceproof.net/arrival.html/"/>
     <id>http://existenceproof.net/arrival.html/</id>
-    <published>2013-06-18T23:24:00.000Z</published>
+    <published>2013-06-19T08:24:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>The Geneva airport is not poorly designed, works well enough to get through from plane to train into the city. Not enough maps though, had to resort to the phone directions. </p>
 <p>The mountainscape was an impressive view, I hope to take it all in later. Ah, the humidity is wonderful, overcast but muggy, what a pleasure!</p>
@@ -1021,7 +1074,7 @@
     <title type="html"><![CDATA[Stop in New York, and Lift]]></title>
     <link href="http://existenceproof.net/stop-in-new-york-and-lift.html/"/>
     <id>http://existenceproof.net/stop-in-new-york-and-lift.html/</id>
-    <published>2013-06-18T11:55:00.000Z</published>
+    <published>2013-06-18T20:55:00.000Z</published>
     <updated>2013-10-30T07:59:47.000Z</updated>
     <content type="html"><![CDATA[<p>I &lt;3 New York city. Yes, in the cheesiest possible way because I do not live there and if I did I would probably complain (an East Coast sort of thing I can understand, but with which I must strain to emphathize). It is the mark of a new New Yorker that the irks and annoyances of a rub-you-the-wrong way type of town float up to the top of your head and bubble out&mdash;least-expected&mdash;at earliest invonvenience, like what has been happening with my California transplant cousin Debbie! No need to worry, the kids are good, the neighborhood is excellent, and despite all the complexities of maximal urban density, Debbie and Marc&#39;s family is doing well, and they have <em>much</em> for which to be proud. Lucas is moving out to San Francisco this fall for school, I will see them again in August&mdash;a chance to ‘’chill out‘’ ;). </p>
 <p>I get on quite well with the NY humidity, despite being a desert creature used to high and dry temperatures. I love that sweating is universal and mandatory, no ifs, ands, or buts about it, we all have to stink. But more than the weather, its the hubbub and density that prevail, lucky me only around for the bustle and none of the hussle. Quick transport, heavy on the walking, low ceilings, narrow hallways, old rickety elevators, cute little everythings, function stacking, squeezing out every ounce of space&mdash;oh, efficiency never felt so good. Cities, you have a lot to learn, it should be way easier to repurpose all these ideas and all this praxis. Perhaps such is the essence of politics, and the friction of translation. </p>
@@ -1051,7 +1104,7 @@
     <title type="html"><![CDATA[On My Way to Geneva]]></title>
     <link href="http://existenceproof.net/on-my-way-to-geneva.html/"/>
     <id>http://existenceproof.net/on-my-way-to-geneva.html/</id>
-    <published>2013-06-17T00:12:00.000Z</published>
+    <published>2013-06-17T09:12:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Writing this on a plane, coasting over the US toward Newark, NJ where I will stay for the evening, catching a connection to Geneva tomorrow morning. Laying it all bare here (that is right folks&mdash;all honesty!), I missed my connecting flight because I showed up (on time) to Oakland Airport (OAK) rather than San Francisco (SFO). &gt;.&lt;</p>
 <p>It took me all until I reached the terminals to realize there was no United airline and /no/ flight waiting for me in Oakland. </p>
@@ -1070,7 +1123,7 @@
     <title type="html"><![CDATA[Launching a new blog on Pelican]]></title>
     <link href="http://existenceproof.net/launching-a-new-blog-on-pelican.html/"/>
     <id>http://existenceproof.net/launching-a-new-blog-on-pelican.html/</id>
-    <published>2013-06-16T14:12:00.000Z</published>
+    <published>2013-06-16T23:12:00.000Z</published>
     <updated>2013-10-30T07:39:17.000Z</updated>
     <content type="html"><![CDATA[<p>Trying my first post :D</p>
 <p><a href="http://getplican.com" target="_blank">Pelican</a> turned out to be a bit of a pain in the ass. No holds barred here, startup was fairly annoying and would probably be much harder for folks /completely/ unfamiliar with python applications.</p>
