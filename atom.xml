@@ -3,12 +3,48 @@
   <title><![CDATA[@wrought]]></title>
   <link href="http://existenceproof.net/atom.xml" rel="self"/>
   <link href="http://existenceproof.net"/>
-  <updated>2014-08-24T03:16:53.959Z</updated>
+  <updated>2014-08-30T00:45:28.877Z</updated>
   <id>http://existenceproof.net/</id>
   <author>
     <name><![CDATA[Matt Senate]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[HELP! Call for Co-Creation (Bay Area)]]></title>
+    <link href="http://existenceproof.net/call-for-co-creation/"/>
+    <id>http://existenceproof.net/call-for-co-creation/</id>
+    <published>2014-08-30T00:40:38.000Z</published>
+    <updated>2014-08-30T00:45:22.000Z</updated>
+    <content type="html"><![CDATA[<p>Hey all,</p>
+<p>Please see this as an open and serious invitation, in a timely hour, to co-create The Omni (aka Omni Oakland Collective, Omni Commons, OMNI, etc):<br><a href="http://omni-oakland.org" target="_blank">http://omni-oakland.org</a></p>
+<p>YOU have the opportunity (right now) to not merely participate in, but co-create a new commons in Oakland. In fact, it cannot be formed without you—this is an all-hands-on-deck moment.</p>
+<p>Sudo Room, the creative community and hackerspace of my membership, is only one part of the Omni Collective. Even as broad as sudo room&#39;s scope (you can hack anything—language, food, culture, bureaucracy, software, hardware, wetware, institutions, your friends, your nose!), there are yet other interest groups that have open calls as well.</p>
+<p>Over the years I have been touched by the works, presences, stories, experiences, and exchanges of so many people in the bay area. I am asking you now to be inclined to join us, either in person or at least in essence.</p>
+<p>Consider this as an opportunity to celebrate the larger (even global) network of existent and emerging communities and physical spaces (places) who and which value, at heart, the interests of people and not vacuous things like profit through exploitation.</p>
+<p>We need you now.</p>
+<p>You can join through member collectives that are open:<br><a href="http://omni-oakland.org/#members" target="_blank">http://omni-oakland.org/#members</a><br>Through our freshly empowered Omni Collective working groups:<br><a href="http://wiki.omni-oakland.org/w/Working_Groups" target="_blank">http://wiki.omni-oakland.org/w/Working_Groups</a><br>Or as a new member collective:<br><a href="http://wiki.omni-oakland.org/w/Join" target="_blank">http://wiki.omni-oakland.org/w/Join</a></p>
+<p>Contact me directly in order to have support to become involved.</p>
+<p>Love and solidarity,<br>Matt</p>
+]]></content>
+    <category scheme="http://existenceproof.net/tags/omni/" term="omni"/>
+    <category scheme="http://existenceproof.net/tags/omni oakland/" term="omni oakland"/>
+    <category scheme="http://existenceproof.net/tags/omni oakland collective/" term="omni oakland collective"/>
+    <category scheme="http://existenceproof.net/tags/omni commons/" term="omni commons"/>
+    <category scheme="http://existenceproof.net/tags/omni collective/" term="omni collective"/>
+    <category scheme="http://existenceproof.net/tags/sudo room/" term="sudo room"/>
+    <category scheme="http://existenceproof.net/tags/sudoers/" term="sudoers"/>
+    <category scheme="http://existenceproof.net/tags/oakland/" term="oakland"/>
+    <category scheme="http://existenceproof.net/tags/commons/" term="commons"/>
+    <category scheme="http://existenceproof.net/tags/community/" term="community"/>
+    <category scheme="http://existenceproof.net/tags/commune/" term="commune"/>
+    <category scheme="http://existenceproof.net/tags/call for co-creation/" term="call for co-creation"/>
+    <category scheme="http://existenceproof.net/tags/call to action/" term="call to action"/>
+    <category scheme="http://existenceproof.net/tags/stakeholdership/" term="stakeholdership"/>
+    <category scheme="http://existenceproof.net/tags/participation/" term="participation"/>
+    <category scheme="http://existenceproof.net/tags/hackerspaces/" term="hackerspaces"/>
+    <category scheme="http://existenceproof.net/tags/place/" term="place"/>
+    <category scheme="http://existenceproof.net/tags/help/" term="help"/>
+  </entry>
   <entry>
     <title type="html"><![CDATA[Step Beyond Pretense for a Moment]]></title>
     <link href="http://existenceproof.net/step-beyond-pretense-for-a-moment/"/>
@@ -1031,6 +1067,32 @@
     <category scheme="http://existenceproof.net/tags/socialism/" term="socialism"/>
   </entry>
   <entry>
+    <title type="html"><![CDATA[Lausanne to Prague to Berlin]]></title>
+    <link href="http://existenceproof.net/lausanne-to-prague-to-berlin.html/"/>
+    <id>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</id>
+    <published>2013-06-23T05:58:00.000Z</published>
+    <updated>2013-10-30T07:39:17.000Z</updated>
+    <content type="html"><![CDATA[<p>Got some sleep in, not as much as I would have liked, but what can I expect having accidentally chosen ‘’the worst seat on the bus‘’ with no leg-room, haha?</p>
+<p>On the other hand this bus, a new one for the agency providing me service, is more akin to an airplane in some senses. These little screens at each seat play movies, music, games, some hilarious Czech student documentaries (very odd), and six episodes of one television show: ‘’Friends‘’ ^.^ heh.</p>
+<p>There was advertisement of wifi on the bus, but I was told it would only work in the Czech Republic&mdash;now that we are here, I am still waiting, with no signal from the bus… and no signal from the terminal. Hopefully bus 167 to Berlin will have wifi enabled ;).</p>
+<p>Lausanne was a great time, many thanks to the folks at FixMe like Jean-Baptiste and especially Malloc, who carted me out to the countryside for a great walk through some Swiss farms and ultimately asking his girlfriend if I can crash at her house in a small village (~200 persons) outside of town. The next day he got me back to Fixme in Lausanne, we shared an excellent good fondue in the old part of town, hacked a bit on a <a href="http://ba.chgrp.org/" target="_blank">BACH</a> port of <a href="http://hackerspaces.ch" target="_blank">hackerspaces.ch</a> before I left! I hope to return, especially now knowing that the Swiss hackerspaces are learning to coordinate, starting simple through <a href="http://hackerspaces.ch/" target="_blank">hackerspaces.ch</a> (started by #fixme) as well as through a <a href="http://ccc-ch.ch/" target="_blank">CCC Switzerland</a> group. Perhaps in two years for the next #OAI8? Fixme members are more than welcome to visit the bay area&mdash;hit me up ;).</p>
+<p><a href="http://hackerspaces.org/wiki/Fixme" target="_blank">Fixme</a> has an odd problem for hackerspaces. Despite being open for 3 years now and following the <a href="">hackerspace patterns</a>, the space is often closed and not used enough! They have enough full-member income to stabilize rent, even with student discounts for that tier and a second tier of membership that is cheaper. Part of the problem, they think, is that not enough folks have access. This was a bit odd to me, and upon further inquisition, it turns out a member poll they thought had attested to a lack of interest in keys was quite the opposite&mdash;people want them (glad I asked)!</p>
+<p>In the meantime, they already set up a system for giving keys to folks who host events in the space, like meetups, as a way to encourage use and distribute access. Further, they are using a trust network of their membership to distribute additional keys (members get 3 keys and give 2 to people they trust). Since the keys use RFID, they can revoke access if necessary. My theory is: the ability to revoke is more useful than revoking itself. </p>
+<p>So far, both PTL and Fixme are entirely men, the former has women stop by sometimes during their Tuesday dinner event, and the latter only when girlfriends of members attend (though there is one person who has been in more than a couple times). My conversations with members of both spaces indicate they think they would benefit from having different kinds of folks involved, it is just unclear how&mdash;and to me, the seeming lack of a champion. For instance, a girlfriend of one of the Fixme members drew their logo, which is a pretty cool androgynous cyborg. </p>
+<p>The question is perhaps, what do folks who have already made touch points with these spaces want? How can the space be welcoming and open to their needs, interests, and beneficial additions to overall visions?</p>
+]]></content>
+    <category scheme="http://existenceproof.net/tags/lausanne/" term="lausanne"/>
+    <category scheme="http://existenceproof.net/tags/prague/" term="prague"/>
+    <category scheme="http://existenceproof.net/tags/berlin/" term="berlin"/>
+    <category scheme="http://existenceproof.net/tags/touring/" term="touring"/>
+    <category scheme="http://existenceproof.net/tags/buses/" term="buses"/>
+    <category scheme="http://existenceproof.net/tags/travel/" term="travel"/>
+    <category scheme="http://existenceproof.net/tags/fixme/" term="fixme"/>
+    <category scheme="http://existenceproof.net/tags/post tenebras lab/" term="post tenebras lab"/>
+    <category scheme="http://existenceproof.net/tags/hackerspaces/" term="hackerspaces"/>
+    <category scheme="http://existenceproof.net/tags/rain/" term="rain"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[Post-Conference]]></title>
     <link href="http://existenceproof.net/post-conference.html/"/>
     <id>http://existenceproof.net/post-conference.html/</id>
@@ -1062,32 +1124,6 @@
     <category scheme="http://existenceproof.net/tags/fixme/" term="fixme"/>
     <category scheme="http://existenceproof.net/tags/post tenebras lab/" term="post tenebras lab"/>
     <category scheme="http://existenceproof.net/tags/hackerspaces/" term="hackerspaces"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[Lausanne to Prague to Berlin]]></title>
-    <link href="http://existenceproof.net/lausanne-to-prague-to-berlin.html/"/>
-    <id>http://existenceproof.net/lausanne-to-prague-to-berlin.html/</id>
-    <published>2013-06-23T05:58:00.000Z</published>
-    <updated>2013-10-30T07:39:17.000Z</updated>
-    <content type="html"><![CDATA[<p>Got some sleep in, not as much as I would have liked, but what can I expect having accidentally chosen ‘’the worst seat on the bus‘’ with no leg-room, haha?</p>
-<p>On the other hand this bus, a new one for the agency providing me service, is more akin to an airplane in some senses. These little screens at each seat play movies, music, games, some hilarious Czech student documentaries (very odd), and six episodes of one television show: ‘’Friends‘’ ^.^ heh.</p>
-<p>There was advertisement of wifi on the bus, but I was told it would only work in the Czech Republic&mdash;now that we are here, I am still waiting, with no signal from the bus… and no signal from the terminal. Hopefully bus 167 to Berlin will have wifi enabled ;).</p>
-<p>Lausanne was a great time, many thanks to the folks at FixMe like Jean-Baptiste and especially Malloc, who carted me out to the countryside for a great walk through some Swiss farms and ultimately asking his girlfriend if I can crash at her house in a small village (~200 persons) outside of town. The next day he got me back to Fixme in Lausanne, we shared an excellent good fondue in the old part of town, hacked a bit on a <a href="http://ba.chgrp.org/" target="_blank">BACH</a> port of <a href="http://hackerspaces.ch" target="_blank">hackerspaces.ch</a> before I left! I hope to return, especially now knowing that the Swiss hackerspaces are learning to coordinate, starting simple through <a href="http://hackerspaces.ch/" target="_blank">hackerspaces.ch</a> (started by #fixme) as well as through a <a href="http://ccc-ch.ch/" target="_blank">CCC Switzerland</a> group. Perhaps in two years for the next #OAI8? Fixme members are more than welcome to visit the bay area&mdash;hit me up ;).</p>
-<p><a href="http://hackerspaces.org/wiki/Fixme" target="_blank">Fixme</a> has an odd problem for hackerspaces. Despite being open for 3 years now and following the <a href="">hackerspace patterns</a>, the space is often closed and not used enough! They have enough full-member income to stabilize rent, even with student discounts for that tier and a second tier of membership that is cheaper. Part of the problem, they think, is that not enough folks have access. This was a bit odd to me, and upon further inquisition, it turns out a member poll they thought had attested to a lack of interest in keys was quite the opposite&mdash;people want them (glad I asked)!</p>
-<p>In the meantime, they already set up a system for giving keys to folks who host events in the space, like meetups, as a way to encourage use and distribute access. Further, they are using a trust network of their membership to distribute additional keys (members get 3 keys and give 2 to people they trust). Since the keys use RFID, they can revoke access if necessary. My theory is: the ability to revoke is more useful than revoking itself. </p>
-<p>So far, both PTL and Fixme are entirely men, the former has women stop by sometimes during their Tuesday dinner event, and the latter only when girlfriends of members attend (though there is one person who has been in more than a couple times). My conversations with members of both spaces indicate they think they would benefit from having different kinds of folks involved, it is just unclear how&mdash;and to me, the seeming lack of a champion. For instance, a girlfriend of one of the Fixme members drew their logo, which is a pretty cool androgynous cyborg. </p>
-<p>The question is perhaps, what do folks who have already made touch points with these spaces want? How can the space be welcoming and open to their needs, interests, and beneficial additions to overall visions?</p>
-]]></content>
-    <category scheme="http://existenceproof.net/tags/lausanne/" term="lausanne"/>
-    <category scheme="http://existenceproof.net/tags/prague/" term="prague"/>
-    <category scheme="http://existenceproof.net/tags/berlin/" term="berlin"/>
-    <category scheme="http://existenceproof.net/tags/touring/" term="touring"/>
-    <category scheme="http://existenceproof.net/tags/buses/" term="buses"/>
-    <category scheme="http://existenceproof.net/tags/travel/" term="travel"/>
-    <category scheme="http://existenceproof.net/tags/fixme/" term="fixme"/>
-    <category scheme="http://existenceproof.net/tags/post tenebras lab/" term="post tenebras lab"/>
-    <category scheme="http://existenceproof.net/tags/hackerspaces/" term="hackerspaces"/>
-    <category scheme="http://existenceproof.net/tags/rain/" term="rain"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Arrival]]></title>
